@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -80,99 +82,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\Characters\Ana\AnaMain.jpg" />
-    <Content Include="Images\Characters\Ana\AnaPicked.jpg" />
-    <Content Include="Images\Characters\Ana\AnaPrior.jpg" />
-    <Content Include="Images\Characters\Angel\AngelMain.jpg" />
-    <Content Include="Images\Characters\Angel\AngelPicked.jpg" />
-    <Content Include="Images\Characters\Angel\AngelPrior.jpg" />
-    <Content Include="Images\Characters\Ash\AshMain.jpg" />
-    <Content Include="Images\Characters\Ash\AshPicked.jpg" />
-    <Content Include="Images\Characters\Ash\AshPrior.jpg" />
-    <Content Include="Images\Characters\Bastion\BastionMain.jpg" />
-    <Content Include="Images\Characters\Bastion\BastionPicked.jpg" />
-    <Content Include="Images\Characters\Bastion\BastionPrior.jpg" />
-    <Content Include="Images\Characters\Batist\BatistMain.jpg" />
-    <Content Include="Images\Characters\Batist\BatistPicked.jpg" />
-    <Content Include="Images\Characters\Batist\BatistPrior.jpg" />
-    <Content Include="Images\Characters\Brigitta\BrigittaMain.jpg" />
-    <Content Include="Images\Characters\Brigitta\BrigittaPicked.jpg" />
-    <Content Include="Images\Characters\Brigitta\BrigittaPrior.jpg" />
-    <Content Include="Images\Characters\d.va\DvaMain.jpg" />
-    <Content Include="Images\Characters\d.va\DvaPicked.jpg" />
-    <Content Include="Images\Characters\d.va\DvaPrior.jpg" />
-    <Content Include="Images\Characters\deathFist\DeathFistMain.jpg" />
-    <Content Include="Images\Characters\deathFist\DeathFistPicked.jpg" />
-    <Content Include="Images\Characters\deathFist\DeathFistPrior.jpg" />
-    <Content Include="Images\Characters\Dzeniata\DzeniataMain.jpg" />
-    <Content Include="Images\Characters\Dzeniata\DzeniataPicked.jpg" />
-    <Content Include="Images\Characters\Dzeniata\DzeniataPrior.jpg" />
-    <Content Include="Images\Characters\Farra\FarraMain.jpg" />
-    <Content Include="Images\Characters\Farra\FarraPicked.jpg" />
-    <Content Include="Images\Characters\Farra\FarraPrior.jpg" />
-    <Content Include="Images\Characters\Ganji\GanjiMain.jpg" />
-    <Content Include="Images\Characters\Ganji\GanjiPicked.jpg" />
-    <Content Include="Images\Characters\Ganji\GanjiPrior.jpg" />
-    <Content Include="Images\Characters\Hanzo\HanzoMain.jpg" />
-    <Content Include="Images\Characters\Hanzo\HanzoPicked.jpg" />
-    <Content Include="Images\Characters\Hanzo\HanzoPrior.jpg" />
-    <Content Include="Images\Characters\Junkrat\JunkratMain.jpg" />
-    <Content Include="Images\Characters\Junkrat\JunkratPicked.jpg" />
-    <Content Include="Images\Characters\Junkrat\JunkratPrior.jpg" />
-    <Content Include="Images\Characters\Lucio\Luciomain.jpg" />
-    <Content Include="Images\Characters\Lucio\LucioPicked.jpg" />
-    <Content Include="Images\Characters\Lucio\LucioPrior.jpg" />
-    <Content Include="Images\Characters\Makkri\MakkriMain.jpg" />
-    <Content Include="Images\Characters\Makkri\MakkriPicked.jpg" />
-    <Content Include="Images\Characters\Makkri\MakkriPrior.jpg" />
-    <Content Include="Images\Characters\May\MayMain.jpg" />
-    <Content Include="Images\Characters\May\MayPicked.jpg" />
-    <Content Include="Images\Characters\May\MayPrior.jpg" />
-    <Content Include="Images\Characters\Moyra\MoyraMain.jpg" />
-    <Content Include="Images\Characters\Moyra\MoyraPicked.jpg" />
-    <Content Include="Images\Characters\Moyra\MoyraPrior.jpg" />
-    <Content Include="Images\Characters\Orisa\OrisaMain.jpg" />
-    <Content Include="Images\Characters\Orisa\OrisaPicked.jpg" />
-    <Content Include="Images\Characters\Orisa\OrisaPrior.jpg" />
-    <Content Include="Images\Characters\RayanHard\RayanHardMain.jpg" />
-    <Content Include="Images\Characters\RayanHard\RayanHardPicked.jpg" />
-    <Content Include="Images\Characters\RayanHard\RayanHardPrior.jpg" />
-    <Content Include="Images\Characters\Simmetra\SimmetraMain.jpg" />
-    <Content Include="Images\Characters\Simmetra\SimmetraPicked.jpg" />
-    <Content Include="Images\Characters\Simmetra\SimmetraPrior.jpg" />
-    <Content Include="Images\Characters\Soldier\Soldiermain.jpg" />
-    <Content Include="Images\Characters\Soldier\SoldierPicked.jpg" />
-    <Content Include="Images\Characters\Soldier\SoldierPrior.jpg" />
-    <Content Include="Images\Characters\Sombra\SombraMain.jpg" />
-    <Content Include="Images\Characters\Sombra\SombraPicked.jpg" />
-    <Content Include="Images\Characters\Sombra\SombraPrior.jpg" />
-    <Content Include="Images\Characters\Taran\TaranMain.jpg" />
-    <Content Include="Images\Characters\Taran\TaranPicked.jpg" />
-    <Content Include="Images\Characters\Taran\TaranPrior.jpg" />
-    <Content Include="Images\Characters\Thorbyorn\ThorbyornMain.jpg" />
-    <Content Include="Images\Characters\Thorbyorn\ThorbyornPicked.jpg" />
-    <Content Include="Images\Characters\Thorbyorn\ThorbyornPrior.jpg" />
-    <Content Include="Images\Characters\Tracer\TracerMain.jpg" />
-    <Content Include="Images\Characters\Tracer\TracerPicked.jpg" />
-    <Content Include="Images\Characters\Tracer\TracerPrior.jpg" />
-    <Content Include="Images\Characters\Turboborrow\TurboborrowMain.jpg" />
-    <Content Include="Images\Characters\Turboborrow\TurboborrowPicked.jpg" />
-    <Content Include="Images\Characters\Turboborrow\TurboborrowPrior.jpg" />
-    <Content Include="Images\Characters\Widow\WidowMain.jpg" />
-    <Content Include="Images\Characters\Widow\WidowPicked.jpg" />
-    <Content Include="Images\Characters\Widow\WidowPrior.jpg" />
-    <Content Include="Images\Characters\Winston\WinstonMain.jpg" />
-    <Content Include="Images\Characters\Winston\WinstonPicked.jpg" />
-    <Content Include="Images\Characters\Winston\WinstonPrior.jpg" />
-    <Content Include="Images\Characters\Zarya\ZaryaMain.jpg" />
-    <Content Include="Images\Characters\Zarya\ZaryaPicked.jpg" />
-    <Content Include="Images\Characters\Zarya\ZaryaPrior.jpg" />
-    <Content Include="Images\Characters\Znec\ZnecMain.jpg" />
-    <Content Include="Images\Characters\Znec\ZnecPicked.jpg" />
-    <Content Include="Images\Characters\Znec\ZnecPrior.jpg" />
-    <Content Include="Images\MainPicture.jpg" />
-    <Content Include="Images\reset.jpg" />
-    <Content Include="Images\reset.png" />
+    <None Include="bin\Debug\images\Characters\Zenyatta\ZenyattaPrior.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -19,250 +19,646 @@ namespace PrettyGoodPickOverwatch
 
         public bool blockButtons;
 
-        public bool anaFlag;
-        public bool angelFlag;
-        public bool znecFlag;
-        public bool junkratFlag;
-        public bool deathfistFlag;
-        public bool bastionFlag;
-        public bool mayFlag;
-        public bool widowFlag;
-        public bool simmetraFlag;
-        public bool soldierFlag;
-        public bool sombraFlag;
-        public bool thorbyornFlag;
-        public bool tracerFlag;
-        public bool farraFlag;
-        public bool hanzoFlag;
-        public bool makkriFlag;
-        public bool ashFlag;
-        public bool ganjiFlag;
-        public bool zaryaFlag;
-        public bool orisaFlag;
-        public bool ryanhardFlag;
-        public bool winstonFlag;
-        public bool turboborrowFlag;
-        public bool taranFlag;
-        public bool dvaFlag;
-        public bool batistFlag;
-        public bool brigittaFlag;
-        public bool dzeniataFlag;
-        public bool lucioFlag;
-        public bool moyraFlag;
+        public bool AnaFlag;
+        public bool MercyFlag;
+        public bool ReaperFlag;
+        public bool JunkratFlag;
+        public bool DoomfistFlag;
+        public bool BastionFlag;
+        public bool MeiFlag;
+        public bool WidowFlag;
+        public bool SymmetraFlag;
+        public bool SoldierFlag;
+        public bool SombraFlag;
+        public bool TorbjornFlag;
+        public bool TracerFlag;
+        public bool PharraFlag;
+        public bool HanzoFlag;
+        public bool MccreeFlag;
+        public bool AshFlag;
+        public bool GenjiFlag;
+        public bool ZaryaFlag;
+        public bool OrisaFlag;
+        public bool ReinhardtFlag;
+        public bool WinstonFlag;
+        public bool RoadhogFlag;
+        public bool TaranFlag;
+        public bool DvaFlag;
+        public bool BaptistFlag;
+        public bool BrigittaFlag;
+        public bool ZenyattaFlag;
+        public bool LucioFlag;
+        public bool MoiraFlag;
+
+        public int MaxHeroPoints = 0;
+        public List<string> PrefferableHealers = new List<string>();
+        public List<string> PrefferableDDs = new List<string>();
+        public List<string> PrefferableTanks = new List<string>();
+
+        public int AnaPoints;
+        public int MercyPoints;
+        public int ReaperPoints;
+        public int JunkratPoints;
+        public int DoomfistPoints;
+        public int BastionPoints;
+        public int MeiPoints;
+        public int WidowPoints;
+        public int SymmetraPoints;
+        public int SoldierPoints;
+        public int SombraPoints;
+        public int TorbjornPoints;
+        public int TracerPoints;
+        public int PharraPoints;
+        public int HanzoPoints;
+        public int MccreePoints;
+        public int AshPoints;
+        public int GenjiPoints;
+        public int ZaryaPoints;
+        public int OrisaPoints;
+        public int ReinhardtPoints;
+        public int WinstonPoints;
+        public int RoadhogPoints;
+        public int TaranPoints;
+        public int DvaPoints;
+        public int BaptistPoints;
+        public int BrigittaPoints;
+        public int ZenyattaPoints;
+        public int LucioPoints;
+        public int MoiraPoints;
 
         public mainForm()
         {
             InitializeComponent();
         }
-
         private void AnaPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\Ana\Ana";
-            healerMethod(AnaPic, anaFlag, path);
-            anaFlag = !anaFlag;
-        }
+            healerMethod(AnaPic, AnaFlag, path);
+            AnaFlag = !AnaFlag;
 
-        private void AngelPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Angel\Angel";
-            healerMethod(AngelPic, angelFlag, path);
-            angelFlag = !angelFlag;
+            if (AnaFlag)
+            {
+                ReinhardtPoints++;
+                GenjiPoints++;
+                LucioPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                GenjiPoints--;
+                LucioPoints--;
+            }
         }
-
-        private void ZnecPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Znec\Znec";
-            damageDealerMethod(ZnecPic, znecFlag, path);
-            znecFlag = !znecFlag;
-        }
-
-        private void JunkratPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Junkrat\Junkrat";
-            damageDealerMethod(JunkratPic, junkratFlag, path);
-            junkratFlag = !junkratFlag;
-        }
-
-        private void DeathFistPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\deathFist\Deathfist";
-            damageDealerMethod(DeathFistPic, deathfistFlag, path);
-            deathfistFlag = !deathfistFlag;
-        }
-
-        private void BastionPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Bastion\Bastion";
-            damageDealerMethod(BastionPic, bastionFlag, path);
-            bastionFlag = !bastionFlag;
-        }
-
-        private void MayPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\May\May";
-            damageDealerMethod(MayPic, mayFlag, path);
-            mayFlag = !mayFlag;
-        }
-
-        private void WidowPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Widow\Widow";
-            damageDealerMethod(WidowPic, widowFlag, path);
-            widowFlag = !widowFlag;
-        }
-
-        private void SimmetraPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Simmetra\Simmetra";
-            damageDealerMethod(SimmetraPic, simmetraFlag, path);
-            simmetraFlag = !simmetraFlag;
-        }
-
-        private void SoldierPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Soldier\Soldier";
-            damageDealerMethod(SoldierPic, soldierFlag, path);
-            soldierFlag = !soldierFlag;
-        }
-
-        private void SombraPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Sombra\Sombra";
-            damageDealerMethod(SombraPic, sombraFlag, path);
-            sombraFlag = !sombraFlag;
-        }
-
-        private void ThorbyornPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Thorbyorn\Thorbyorn";
-            damageDealerMethod(ThorbyornPic, thorbyornFlag, path);
-            thorbyornFlag = !thorbyornFlag;
-        }
-
-        private void TracerPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Tracer\Tracer";
-            damageDealerMethod(TracerPic, tracerFlag, path);
-            tracerFlag = !tracerFlag;
-        }
-
-        private void FarraPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Farra\Farra";
-            damageDealerMethod(FarraPic, farraFlag, path);
-            farraFlag = !farraFlag;
-        }
-
-        private void HanzoPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Hanzo\Hanzo";
-            damageDealerMethod(HanzoPic, hanzoFlag, path);
-            hanzoFlag = !hanzoFlag;
-        }
-
-        private void MakkriPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Makkri\Makkri";
-            damageDealerMethod(MakkriPic, makkriFlag, path);
-            makkriFlag = !makkriFlag;
-        }
-
         private void AshPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\Ash\Ash";
-            damageDealerMethod(AshPic, ashFlag, path);
-            ashFlag = !ashFlag;
-        }
+            damageDealerMethod(AshPic, AshFlag, path);
+            AshFlag = !AshFlag;
 
-        private void GanjiPic_Click(object sender, EventArgs e)
+            if (AshFlag)
+            {
+                MercyPoints++;
+                ReinhardtPoints++;
+                TaranPoints++;
+            }
+            else
+            {
+                MercyPoints--;
+                ReinhardtPoints--;
+                TaranPoints--;
+            }
+        }
+        private void MercyPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Ganji\Ganji";
-            damageDealerMethod(GanjiPic, ganjiFlag, path);
-            ganjiFlag = !ganjiFlag;
-        }
+            string path = @"images\Characters\Mercy\Mercy";
+            healerMethod(MercyPic, MercyFlag, path);
+            MercyFlag = !MercyFlag;
 
-        private void zaryaPic_Click(object sender, EventArgs e)
+            if (MercyFlag)
+            {
+                PharraPoints++;
+                BastionPoints++;
+                OrisaPoints++;
+            }
+            else
+            {
+                PharraPoints--;
+                BastionPoints--;
+                OrisaPoints--;
+            }
+        }
+        private void ReaperPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Reaper\Reaper";
+            damageDealerMethod(ReaperPic, ReaperFlag, path);
+            ReaperFlag = !ReaperFlag;
+
+            if (ReaperFlag)
+            {
+                MeiPoints++;
+                ZenyattaPoints++;
+                ZaryaPoints++;
+            }
+            else
+            {
+                MeiPoints--;
+                ZenyattaPoints--;
+                ZaryaPoints--;
+            }
+        }
+        private void JunkratPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Junkrat\Junkrat";
+            damageDealerMethod(JunkratPic, JunkratFlag, path);
+            JunkratFlag = !JunkratFlag;
+
+            if (JunkratFlag)
+            {
+                ReinhardtPoints++;
+                ZaryaPoints++;
+                ReaperPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                ZaryaPoints--;
+                ReaperPoints--;
+            }
+        }
+        private void DoomfistPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Doomfist\Doomfist";
+            damageDealerMethod(DoomfistPic, DoomfistFlag, path);
+            DoomfistFlag = !DoomfistFlag;
+
+            if (DoomfistFlag)
+            {
+                BastionPoints++;
+                MccreePoints++;
+                ReaperPoints++;
+            }
+            else
+            {
+                BastionPoints--;
+                MccreePoints--;
+                ReaperPoints--;
+            }
+        }
+        private void BastionPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Bastion\Bastion";
+            damageDealerMethod(BastionPic, BastionFlag, path);
+            BastionFlag = !BastionFlag;
+
+            if (BastionFlag)
+            {
+                OrisaPoints++;
+                MercyPoints++;
+                SymmetraPoints++;
+            }
+            else
+            {
+                OrisaPoints--;
+                MercyPoints--;
+                SymmetraPoints--;
+            }
+        }
+        private void MeiPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Mei\Mei";
+            damageDealerMethod(MeiPic, MeiFlag, path);
+            MeiFlag = !MeiFlag;
+
+            if (MeiFlag)
+            {
+                ReaperPoints++;
+                ReinhardtPoints++;
+                LucioPoints++;
+            }
+            else
+            {
+                ReaperPoints--;
+                ReinhardtPoints--;
+                LucioPoints--;
+            }
+        }
+        private void WidowPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Widow\Widow";
+            damageDealerMethod(WidowPic, WidowFlag, path);
+            WidowFlag = !WidowFlag;
+
+            if (WidowFlag)
+            {
+                HanzoPoints++;
+                WinstonPoints++;
+                DvaPoints++;
+            }
+            else
+            {
+                HanzoPoints--;
+                WinstonPoints--;
+                DvaPoints--;
+            }
+        }
+        private void SymmetraPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Symmetra\Symmetra";
+            damageDealerMethod(SymmetraPic, SymmetraFlag, path);
+            SymmetraFlag = !SymmetraFlag;
+
+            if (SymmetraFlag)
+            {
+                BastionPoints++;
+                OrisaPoints++;
+                JunkratPoints++;
+            }
+            else
+            {
+                BastionPoints--;
+                OrisaPoints--;
+                JunkratPoints--;
+            }
+        }
+        private void SoldierPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Soldier\Soldier";
+            damageDealerMethod(SoldierPic, SoldierFlag, path);
+            SoldierFlag = !SoldierFlag;
+
+            if (SoldierFlag)
+            {
+                SombraPoints++;
+                AnaPoints++;
+                ReinhardtPoints++;
+            }
+            else
+            {
+                SombraPoints--;
+                AnaPoints--;
+                ReinhardtPoints--;
+            }
+        }
+        private void SombraPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Sombra\Sombra";
+            damageDealerMethod(SombraPic, SombraFlag, path);
+            SombraFlag = !SombraFlag;
+
+            if (SombraFlag)
+            {
+                DvaPoints++;
+                ZaryaPoints++;
+                ReinhardtPoints++;
+            }
+            else
+            {
+                DvaPoints--;
+                ZaryaPoints--;
+                ReinhardtPoints--;
+            }
+        }
+        private void TorbjornPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Torbjorn\Torbjorn";
+            damageDealerMethod(TorbjornPic, TorbjornFlag, path);
+            TorbjornFlag = !TorbjornFlag;
+
+            if (TorbjornFlag)
+            {
+                ReinhardtPoints++;
+                OrisaPoints++;
+                JunkratPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                OrisaPoints--;
+                JunkratPoints--;
+            }
+        }
+        private void TracerPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Tracer\Tracer";
+            damageDealerMethod(TracerPic, TracerFlag, path);
+            TracerFlag = !TracerFlag;
+
+            if (TracerFlag)
+            {
+                GenjiPoints++;
+                WinstonPoints++;
+                DvaPoints++;
+            }
+            else
+            {
+                GenjiPoints--;
+                WinstonPoints--;
+                DvaPoints--;
+            }
+        }
+        private void PharraPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Pharra\Pharra";
+            damageDealerMethod(PharraPic, PharraFlag, path);
+            PharraFlag = !PharraFlag;
+
+            if (PharraFlag)
+            {
+                MercyPoints++;
+                ZenyattaPoints++;
+                ZaryaPoints++;
+            }
+            else
+            {
+                MercyPoints--;
+                ZenyattaPoints--;
+                ZaryaPoints--;
+            }
+        }
+        private void HanzoPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Hanzo\Hanzo";
+            damageDealerMethod(HanzoPic, HanzoFlag, path);
+            HanzoFlag = !HanzoFlag;
+
+            if (HanzoFlag)
+            {
+                WidowPoints++;
+                MccreePoints++;
+                AshPoints++;
+            }
+            else
+            {
+                WidowPoints--;
+                MccreePoints--;
+                AshPoints--;
+            }
+        }
+        private void MccreePic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Mccree\Mccree";
+            damageDealerMethod(MccreePic, MccreeFlag, path);
+            MccreeFlag = !MccreeFlag;
+
+            if (MccreeFlag)
+            {
+                ReaperPoints++;
+                ReinhardtPoints++;
+                LucioPoints++;
+            }
+            else
+            {
+                ReaperPoints--;
+                ReinhardtPoints--;
+                LucioPoints--;
+            }
+        }
+        private void GenjiPic_Click(object sender, EventArgs e)
+        {
+            string path = @"images\Characters\Genji\Genji";
+            damageDealerMethod(GenjiPic, GenjiFlag, path);
+            GenjiFlag = !GenjiFlag;
+
+            if (GenjiFlag)
+            {
+                WinstonPoints++;
+                TaranPoints++;
+                TracerPoints++;
+            }
+            else
+            {
+                WinstonPoints--;
+                TaranPoints--;
+                TracerPoints--;
+            }
+        }
+        private void ZaryaPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\Zarya\Zarya";
-            tankMethod(zaryaPic, zaryaFlag, path);
-            zaryaFlag = !zaryaFlag;
-        }
+            tankMethod(ZaryaPic, ZaryaFlag, path);
+            ZaryaFlag = !ZaryaFlag;
 
-        private void orisaPic_Click(object sender, EventArgs e)
+            if (ZaryaFlag)
+            {
+                ReinhardtPoints++;
+                HanzoPoints++;
+                TaranPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                HanzoPoints--;
+                TaranPoints--;
+            }
+        }
+        private void OrisaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Orisa\orisa";
-            tankMethod(orisaPic, orisaFlag, path);
-            orisaFlag = !orisaFlag;
-        }
+            string path = @"images\Characters\Orisa\Orisa";
+            tankMethod(OrisaPic, OrisaFlag, path);
+            OrisaFlag = !OrisaFlag;
 
-        private void rayanhardPic_Click(object sender, EventArgs e)
+            if (OrisaFlag)
+            {
+                RoadhogPoints++;
+                AshPoints++;
+                HanzoPoints++;
+            }
+            else
+            {
+                RoadhogPoints--;
+                AshPoints--;
+                HanzoPoints--;
+            }
+        }
+        private void ReinhardtPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\rayanhard\rayanhard";
-            tankMethod(rayanhardPic, ryanhardFlag, path);
-            ryanhardFlag = !ryanhardFlag;
-        }
+            string path = @"images\Characters\Reinhardt\Reinhardt";
+            tankMethod(ReinhardtPic, ReinhardtFlag, path);
+            ReinhardtFlag = !ReinhardtFlag;
 
-        private void winstonPic_Click(object sender, EventArgs e)
+            if (ReinhardtFlag)
+            {
+                ZaryaPoints++;
+                AnaPoints++;
+                LucioPoints++;
+            }
+            else
+            {
+                ZaryaPoints--;
+                AnaPoints--;
+                LucioPoints--;
+            }
+        }
+        private void WinstonPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\winston\winston";
-            tankMethod(winstonPic, winstonFlag, path);
-            winstonFlag = !winstonFlag;
-        }
+            string path = @"images\Characters\Winston\Winston";
+            tankMethod(WinstonPic, WinstonFlag, path);
+            WinstonFlag = !WinstonFlag;
 
-        private void turboborrowPic_Click(object sender, EventArgs e)
+            if (WinstonFlag)
+            {
+                DvaPoints++;
+                GenjiPoints++;
+                TracerPoints++;
+            }
+            else
+            {
+                DvaPoints--;
+                GenjiPoints--;
+                TracerPoints--;
+            }
+        }
+        private void RoadhogPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\turboborrow\turboborrow";
-            tankMethod(turboborrowPic, turboborrowFlag, path);
-            turboborrowFlag = !turboborrowFlag;
-        }
+            string path = @"images\Characters\Roadhog\Roadhog";
+            tankMethod(RoadhogPic, RoadhogFlag, path);
+            RoadhogFlag = !RoadhogFlag;
 
-        private void taranPic_Click(object sender, EventArgs e)
+            if (RoadhogFlag)
+            {
+                OrisaPoints++;
+                ZaryaPoints++;
+                ZenyattaPoints++;
+            }
+            else
+            {
+                OrisaPoints--;
+                ZaryaPoints--;
+                ZenyattaPoints--;
+            }
+        }
+        private void TaranPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\taran\taran";
-            tankMethod(taranPic, taranFlag, path);
-            taranFlag = !taranFlag;
-        }
+            string path = @"images\Characters\Taran\Taran";
+            tankMethod(TaranPic, TaranFlag, path);
+            TaranFlag = !TaranFlag;
 
-        private void dvaPic_Click(object sender, EventArgs e)
+            if (TaranFlag)
+            {
+                OrisaPoints++;
+                AshPoints++;
+                GenjiPoints++;
+            }
+            else
+            {
+                OrisaPoints--;
+                AshPoints--;
+                GenjiPoints--;
+            }
+        }
+        private void DvaPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\d.va\Dva";
-            tankMethod(dvaPic, dvaFlag, path);
-            dvaFlag = !dvaFlag;
-        }
+            tankMethod(DvaPic, DvaFlag, path);
+            DvaFlag = !DvaFlag;
 
-        private void BatistPic_Click(object sender, EventArgs e)
+            if (DvaFlag)
+            {
+                WinstonPoints++;
+                TaranPoints++;
+                SombraPoints++;
+            }
+            else
+            {
+                WinstonPoints--;
+                TaranPoints--;
+                SombraPoints--;
+            }
+        }
+        private void BaptistPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Batist\Batist";
-            healerMethod(BatistPic, batistFlag, path);
-            batistFlag = !batistFlag;
-        }
+            string path = @"images\Characters\Baptist\Baptist";
+            healerMethod(BaptistPic, BaptistFlag, path);
+            BaptistFlag = !BaptistFlag;
 
+            if (BaptistFlag)
+            {
+                BastionPoints++;
+                OrisaPoints++;
+                MccreePoints++;
+            }
+            else
+            {
+                BastionPoints--;
+                OrisaPoints--;
+                MccreePoints--;
+            }
+        }
         private void BrigittaPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\Brigitta\Brigitta";
-            healerMethod(BrigittaPic, brigittaFlag, path);
-            brigittaFlag = !brigittaFlag;
-        }
+            healerMethod(BrigittaPic, BrigittaFlag, path);
+            BrigittaFlag = !BrigittaFlag;
 
-        private void DzeniataPic_Click(object sender, EventArgs e)
+            if (BrigittaFlag)
+            {
+                ReinhardtPoints++;
+                LucioPoints++;
+                ReaperPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                LucioPoints--;
+                ReaperPoints--;
+            }
+        }
+        private void ZenyattaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Dzeniata\Dzeniata";
-            healerMethod(DzeniataPic, dzeniataFlag, path);
-            dzeniataFlag = !dzeniataFlag;
-        }
+            string path = @"images\Characters\Zenyatta\Zenyatta";
+            healerMethod(ZenyattaPic, ZenyattaFlag, path);
+            ZenyattaFlag = !ZenyattaFlag;
 
+            if (ZenyattaFlag)
+            {
+                AnaPoints++;
+                WinstonPoints++;
+                TracerPoints++;
+            }
+            else
+            {
+                AnaPoints--;
+                WinstonPoints--;
+                TracerPoints--;
+            }
+        }
         private void LucioPic_Click(object sender, EventArgs e)
         {
             string path = @"images\Characters\Lucio\Lucio";
-            healerMethod(LucioPic, lucioFlag, path);
-            lucioFlag = !lucioFlag;
-        }
+            healerMethod(LucioPic, LucioFlag, path);
+            LucioFlag = !LucioFlag;
 
-        private void MoyraPic_Click(object sender, EventArgs e)
+            if (LucioFlag)
+            {
+                ReinhardtPoints++;
+                ZaryaPoints++;
+                ReaperPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                ZaryaPoints--;
+                ReaperPoints--;
+            }
+        }
+        private void MoiraPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Moyra\Moyra";
-            healerMethod(MoyraPic, moyraFlag, path);
-            moyraFlag = !moyraFlag;
+            string path = @"images\Characters\Moira\Moira";
+            healerMethod(MoiraPic, MoiraFlag, path);
+            MoiraFlag = !MoiraFlag;
+
+            if (MoiraFlag)
+            {
+                ReinhardtPoints++;
+                OrisaPoints++;
+                RoadhogPoints++;
+            }
+            else
+            {
+                ReinhardtPoints--;
+                OrisaPoints--;
+                RoadhogPoints--;
+            }
         }
 
         public void healerMethod(PictureBox box, bool flag, string path)
@@ -288,24 +684,21 @@ namespace PrettyGoodPickOverwatch
                     }
                     else
                     {
+                        if (totalCount < 6 && totalCount >= 0)
                         {
-                            if (totalCount < 6 && totalCount >= 0)
+                            healers++;
+                            totalCount++;
+                            if (totalCount == 5)
                             {
-                                healers++;
-                                totalCount++;
-                                if (totalCount == 5)
-                                {
-                                    showPick();
-                                }
-                                path += @"Picked.jpg";
-                                box.Image = Image.FromFile(path);
+                                showPick();
                             }
+                            path += @"Picked.jpg";
+                            box.Image = Image.FromFile(path);
                         }
-                    }               
+                    }
                 }
             }
         }
-
         public void damageDealerMethod(PictureBox box, bool flag, string path)
         {
             if (!blockButtons)
@@ -342,10 +735,10 @@ namespace PrettyGoodPickOverwatch
                         damageDealers--;
                         totalCount--;
                     }
+
                 }
             }
         }
-
         public void tankMethod(PictureBox box, bool flag, string path)
         {
             if (!blockButtons)
@@ -381,72 +774,289 @@ namespace PrettyGoodPickOverwatch
                         box.Image = Image.FromFile(path);
                         tanks--;
                         totalCount--;
-                    }                    
+                    }
                 }
             }
         }
 
-        public void showPick() {          
+        public void showPick()
+        {
+            CountMaxPoints();
+            //Вызов функции подсчета
+            //составление структуры
+
             if (tanks < 2)
             {
                 yellowTank();
                 if (healers < 2)
+                {
                     yellowHealers();
+                }
 
                 if (damageDealers < 2)
+                {
                     yellowDd();
+                }
             }
             else
             {
                 if (healers < 2)
+                {
                     yellowHealers();
-
+                }
                 else
+                {
                     yellowDd();
+                }
             }
             blockButtons = true;
             label1.Text = "Жёлтым отображены лучшие герои для выбора";
+
+            //Замена подсвеченных героев на оптимального
+        }
+
+        void CountMaxPoints()
+        {
+            MaxHeroPoints = AnaPoints;
+            if (MaxHeroPoints < MercyPoints)
+                MaxHeroPoints = MercyPoints;
+            if (MaxHeroPoints < ReaperPoints)
+                MaxHeroPoints = ReaperPoints;
+            if (MaxHeroPoints < JunkratPoints)
+                MaxHeroPoints = JunkratPoints;
+            if (MaxHeroPoints < DoomfistPoints)
+                MaxHeroPoints = DoomfistPoints;
+            if (MaxHeroPoints < BastionPoints)
+                MaxHeroPoints = BastionPoints;
+            if (MaxHeroPoints < MeiPoints)
+                MaxHeroPoints = MeiPoints;
+            if (MaxHeroPoints < WidowPoints)
+                MaxHeroPoints = WidowPoints;
+            if (MaxHeroPoints < SymmetraPoints)
+                MaxHeroPoints = SymmetraPoints;
+            if (MaxHeroPoints < SoldierPoints)
+                MaxHeroPoints = SoldierPoints;
+            if (MaxHeroPoints < SombraPoints)
+                MaxHeroPoints = SombraPoints;
+            if (MaxHeroPoints < TorbjornPoints)
+                MaxHeroPoints = TorbjornPoints;
+            if (MaxHeroPoints < TracerPoints)
+                MaxHeroPoints = TracerPoints;
+            if (MaxHeroPoints < PharraPoints)
+                MaxHeroPoints = PharraPoints;
+            if (MaxHeroPoints < HanzoPoints)
+                MaxHeroPoints = HanzoPoints;
+            if (MaxHeroPoints < MccreePoints)
+                MaxHeroPoints = MccreePoints;
+            if (MaxHeroPoints < AshPoints)
+                MaxHeroPoints = AshPoints;
+            if (MaxHeroPoints < GenjiPoints)
+                MaxHeroPoints = GenjiPoints;
+            if (MaxHeroPoints < ZaryaPoints)
+                MaxHeroPoints = ZaryaPoints;
+            if (MaxHeroPoints < OrisaPoints)
+                MaxHeroPoints = OrisaPoints;
+            if (MaxHeroPoints < ReinhardtPoints)
+                MaxHeroPoints = ReinhardtPoints;
+            if (MaxHeroPoints < WinstonPoints)
+                MaxHeroPoints = WinstonPoints;
+            if (MaxHeroPoints < RoadhogPoints)
+                MaxHeroPoints = RoadhogPoints;
+            if (MaxHeroPoints < TaranPoints)
+                MaxHeroPoints = TaranPoints;
+            if (MaxHeroPoints < DvaPoints)
+                MaxHeroPoints = DvaPoints;
+            if (MaxHeroPoints < BaptistPoints)
+                MaxHeroPoints = BaptistPoints;
+            if (MaxHeroPoints < BrigittaPoints)
+                MaxHeroPoints = BrigittaPoints;
+            if (MaxHeroPoints < ZenyattaPoints)
+                MaxHeroPoints = ZenyattaPoints;
+            if (MaxHeroPoints < LucioPoints)
+                MaxHeroPoints = LucioPoints;
+            if (MaxHeroPoints < MoiraPoints)
+                MaxHeroPoints = MoiraPoints;
+
+            if (MaxHeroPoints == AnaPoints)
+                PrefferableHealers.Add("Ana");
+            if (MaxHeroPoints == MercyPoints)
+                PrefferableHealers.Add("Mercy");
+            if (MaxHeroPoints == ReaperPoints)
+                PrefferableDDs.Add("Reaper");
+            if (MaxHeroPoints == JunkratPoints)
+                PrefferableDDs.Add("Junkrat");
+            if (MaxHeroPoints == DoomfistPoints)
+                PrefferableDDs.Add("Doomfist");
+            if (MaxHeroPoints == BastionPoints)
+                PrefferableDDs.Add("Bastion");
+            if (MaxHeroPoints == MeiPoints)
+                PrefferableDDs.Add("Mei");
+            if (MaxHeroPoints == WidowPoints)
+                PrefferableDDs.Add("Widow");
+            if (MaxHeroPoints == SymmetraPoints)
+                PrefferableDDs.Add("Symmetra");
+            if (MaxHeroPoints == SoldierPoints)
+                PrefferableDDs.Add("Soldier");
+            if (MaxHeroPoints == SombraPoints)
+                PrefferableDDs.Add("Sombra");
+            if (MaxHeroPoints == TorbjornPoints)
+                PrefferableDDs.Add("Torbjorn");
+            if (MaxHeroPoints == TracerPoints)
+                PrefferableDDs.Add("Tracer");
+            if (MaxHeroPoints == PharraPoints)
+                PrefferableDDs.Add("Pharra");
+            if (MaxHeroPoints == HanzoPoints)
+                PrefferableDDs.Add("Hanzo");
+            if (MaxHeroPoints == MccreePoints)
+                PrefferableDDs.Add("Mccree");
+            if (MaxHeroPoints == AshPoints)
+                PrefferableDDs.Add("Ash");
+            if (MaxHeroPoints == GenjiPoints)
+                PrefferableDDs.Add("Genji");
+            if (MaxHeroPoints == ZaryaPoints)
+                PrefferableTanks.Add("Zarya");
+            if (MaxHeroPoints == OrisaPoints)
+                PrefferableTanks.Add("Orisa");
+            if (MaxHeroPoints == ReinhardtPoints)
+                PrefferableTanks.Add("Reinhardt");
+            if (MaxHeroPoints == WinstonPoints)
+                PrefferableTanks.Add("Winston");
+            if (MaxHeroPoints == RoadhogPoints)
+                PrefferableTanks.Add("Roadhog");
+            if (MaxHeroPoints == TaranPoints)
+                PrefferableTanks.Add("Taran");
+            if (MaxHeroPoints == DvaPoints)
+                PrefferableTanks.Add("Dva");
+            if (MaxHeroPoints == BaptistPoints)
+                PrefferableHealers.Add("Baptist");
+            if (MaxHeroPoints == BrigittaPoints)
+                PrefferableHealers.Add("Brigitta");
+            if (MaxHeroPoints == ZenyattaPoints)
+                PrefferableHealers.Add("Zenyatta");
+            if (MaxHeroPoints == LucioPoints)
+                PrefferableHealers.Add("Lucio");
+            if (MaxHeroPoints == MoiraPoints)
+                PrefferableHealers.Add("Moira");
+        }
+        void Replace(string Hero)
+        {
+            if (Hero == "Ana")
+                AnaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+
+            if (Hero == "Mercy")
+                MercyPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Reaper")
+                ReaperPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Junkrat")
+                JunkratPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Doomfist")
+                DoomfistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Bastion")
+                BastionPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Mei")
+                MeiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Widow")
+                WidowPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Symmetra")
+                SymmetraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Soldier")
+                SoldierPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "")
+                SombraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Torbjorn")
+                TorbjornPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Tracer")
+                TracerPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Pharra")
+                PharraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Hanzo")
+                HanzoPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Mccree")
+                MccreePic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Ash")
+                AshPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Genji")
+                GenjiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Zarya")
+                ZaryaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Orisa")
+                OrisaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Reinhardt")
+                ReinhardtPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Winston")
+                WinstonPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Roadhog")
+                RoadhogPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Taran")
+                TaranPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Dva")
+                DvaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Baptist")
+                BaptistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Brigitta")
+                BrigittaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Zenyatta")
+                ZenyattaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Lucio")
+                LucioPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+            if (Hero == "Moira")
+                MoiraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+
         }
 
         public void yellowTank()
         {
-            dvaPic_Click(new object(), new EventArgs());
-            rayanhardPic_Click(new object(), new EventArgs());
-            orisaPic_Click(new object(), new EventArgs());
-            zaryaPic_Click(new object(), new EventArgs());
-            winstonPic_Click(new object(), new EventArgs());
-            taranPic_Click(new object(), new EventArgs());
-            turboborrowPic_Click(new object(), new EventArgs());
-        }
+            DvaPic_Click(new object(), new EventArgs());
+            ReinhardtPic_Click(new object(), new EventArgs());
+            OrisaPic_Click(new object(), new EventArgs());
+            ZaryaPic_Click(new object(), new EventArgs());
+            WinstonPic_Click(new object(), new EventArgs());
+            TaranPic_Click(new object(), new EventArgs());
+            RoadhogPic_Click(new object(), new EventArgs());
 
+            foreach (string Hero in PrefferableTanks)
+            {
+                Replace(Hero);
+            }
+        }
         public void yellowDd()
         {
             BastionPic_Click(new object(), new EventArgs());
-            GanjiPic_Click(new object(), new EventArgs());
-            ZnecPic_Click(new object(), new EventArgs());
+            GenjiPic_Click(new object(), new EventArgs());
+            ReaperPic_Click(new object(), new EventArgs());
             JunkratPic_Click(new object(), new EventArgs());
-            DeathFistPic_Click(new object(), new EventArgs());
-            MakkriPic_Click(new object(), new EventArgs());
-            MayPic_Click(new object(), new EventArgs());
+            DoomfistPic_Click(new object(), new EventArgs());
+            MccreePic_Click(new object(), new EventArgs());
+            MeiPic_Click(new object(), new EventArgs());
             WidowPic_Click(new object(), new EventArgs());
-            SimmetraPic_Click(new object(), new EventArgs());
+            SymmetraPic_Click(new object(), new EventArgs());
             SoldierPic_Click(new object(), new EventArgs());
             SombraPic_Click(new object(), new EventArgs());
-            ThorbyornPic_Click(new object(), new EventArgs());
+            TorbjornPic_Click(new object(), new EventArgs());
             TracerPic_Click(new object(), new EventArgs());
-            FarraPic_Click(new object(), new EventArgs());
+            PharraPic_Click(new object(), new EventArgs());
             HanzoPic_Click(new object(), new EventArgs());
             AshPic_Click(new object(), new EventArgs());
-        }
 
-        public void yellowHealers() {
+            foreach (string Hero in PrefferableDDs)
+            {
+                Replace(Hero);
+            }
+        }
+        public void yellowHealers()
+        {
             AnaPic_Click(new object(), new EventArgs());
-            AngelPic_Click(new object(), new EventArgs());
+            MercyPic_Click(new object(), new EventArgs());
             LucioPic_Click(new object(), new EventArgs());
-            MoyraPic_Click(new object(), new EventArgs());
-            DzeniataPic_Click(new object(), new EventArgs());
-            BatistPic_Click(new object(), new EventArgs());
+            MoiraPic_Click(new object(), new EventArgs());
+            ZenyattaPic_Click(new object(), new EventArgs());
+            BaptistPic_Click(new object(), new EventArgs());
             BrigittaPic_Click(new object(), new EventArgs());
+
+            foreach (string Hero in PrefferableHealers)
+            {
+                Replace(Hero);
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -457,65 +1067,102 @@ namespace PrettyGoodPickOverwatch
             tanks = 0;
             blockButtons = false;
             AnaPic.Image = Image.FromFile(@"images\Characters\Ana\AnaMain.jpg");
-            AngelPic.Image = Image.FromFile(@"images\Characters\Angel\AngelMain.jpg");
+            MercyPic.Image = Image.FromFile(@"images\Characters\Mercy\MercyMain.jpg");
             LucioPic.Image = Image.FromFile(@"images\Characters\Lucio\LucioMain.jpg");
-            MoyraPic.Image = Image.FromFile(@"images\Characters\Moyra\MoyraMain.jpg");
-            DzeniataPic.Image = Image.FromFile(@"images\Characters\Dzeniata\DzeniataMain.jpg");
-            BatistPic.Image = Image.FromFile(@"images\Characters\Batist\BatistMain.jpg");
+            MoiraPic.Image = Image.FromFile(@"images\Characters\Moira\MoiraMain.jpg");
+            ZenyattaPic.Image = Image.FromFile(@"images\Characters\Zenyatta\ZenyattaMain.jpg");
+            BaptistPic.Image = Image.FromFile(@"images\Characters\Baptist\BaptistMain.jpg");
             BrigittaPic.Image = Image.FromFile(@"images\Characters\Brigitta\BrigittaMain.jpg");
             BastionPic.Image = Image.FromFile(@"images\Characters\Bastion\BastionMain.jpg");
-            GanjiPic.Image = Image.FromFile(@"images\Characters\Ganji\GanjiMain.jpg");
-            ZnecPic.Image = Image.FromFile(@"images\Characters\Znec\ZnecMain.jpg");
-            DeathFistPic.Image = Image.FromFile(@"images\Characters\DeathFist\DeathFistMain.jpg");
-            MakkriPic.Image = Image.FromFile(@"images\Characters\Makkri\MakkriMain.jpg");
-            MayPic.Image = Image.FromFile(@"images\Characters\May\MayMain.jpg");
+            GenjiPic.Image = Image.FromFile(@"images\Characters\Genji\GenjiMain.jpg");
+            ReaperPic.Image = Image.FromFile(@"images\Characters\Reaper\ReaperMain.jpg");
+            DoomfistPic.Image = Image.FromFile(@"images\Characters\Doomfist\DoomfistMain.jpg");
+            MccreePic.Image = Image.FromFile(@"images\Characters\Mccree\MccreeMain.jpg");
+            MeiPic.Image = Image.FromFile(@"images\Characters\Mei\MeiMain.jpg");
             WidowPic.Image = Image.FromFile(@"images\Characters\Widow\WidowMain.jpg");
-            SimmetraPic.Image = Image.FromFile(@"images\Characters\Simmetra\SimmetraMain.jpg");
+            SymmetraPic.Image = Image.FromFile(@"images\Characters\Symmetra\SymmetraMain.jpg");
             SoldierPic.Image = Image.FromFile(@"images\Characters\Soldier\SoldierMain.jpg");
             SombraPic.Image = Image.FromFile(@"images\Characters\Sombra\SombraMain.jpg");
-            ThorbyornPic.Image = Image.FromFile(@"images\Characters\Thorbyorn\ThorbyornMain.jpg");
+            TorbjornPic.Image = Image.FromFile(@"images\Characters\Torbjorn\TorbjornMain.jpg");
             TracerPic.Image = Image.FromFile(@"images\Characters\Tracer\TracerMain.jpg");
-            FarraPic.Image = Image.FromFile(@"images\Characters\Farra\FarraMain.jpg");
+            PharraPic.Image = Image.FromFile(@"images\Characters\Pharra\PharraMain.jpg");
             HanzoPic.Image = Image.FromFile(@"images\Characters\Hanzo\HanzoMain.jpg");
             AshPic.Image = Image.FromFile(@"images\Characters\Ash\AshMain.jpg");
-            dvaPic.Image = Image.FromFile(@"images\Characters\d.va\dvaMain.jpg");
-            rayanhardPic.Image = Image.FromFile(@"images\Characters\rayanhard\rayanhardMain.jpg");
-            orisaPic.Image = Image.FromFile(@"images\Characters\Orisa\OrisaMain.jpg");
-            zaryaPic.Image = Image.FromFile(@"images\Characters\zarya\zaryaMain.jpg");
-            winstonPic.Image = Image.FromFile(@"images\Characters\winston\winstonMain.jpg");
-            taranPic.Image = Image.FromFile(@"images\Characters\taran\taranMain.jpg");
-            turboborrowPic.Image = Image.FromFile(@"images\Characters\turboborrow\turboborrowMain.jpg");
-            JunkratPic.Image = Image.FromFile(@"images\Characters\junkrat\junkratMain.jpg");
-            anaFlag = false;
-            angelFlag = false;
-            znecFlag = false;
-            junkratFlag = false;
-            deathfistFlag = false;
-            bastionFlag = false;
-            mayFlag = false;
-            widowFlag = false;
-            simmetraFlag = false;
-            soldierFlag = false;
-            sombraFlag = false;
-            thorbyornFlag = false;
-            tracerFlag = false;
-            farraFlag = false;
-            hanzoFlag = false;
-            makkriFlag = false;
-            ashFlag = false;
-            ganjiFlag = false;
-            zaryaFlag = false;
-            orisaFlag = false;
-            ryanhardFlag = false;
-            winstonFlag = false;
-            turboborrowFlag = false;
-            taranFlag = false;
-            dvaFlag = false;
-            batistFlag = false;
-            brigittaFlag = false;
-            dzeniataFlag = false;
-            lucioFlag = false;
-            moyraFlag = false;
+            DvaPic.Image = Image.FromFile(@"images\Characters\d.va\DvaMain.jpg");
+            ReinhardtPic.Image = Image.FromFile(@"images\Characters\Reinhardt\ReinhardtMain.jpg");
+            OrisaPic.Image = Image.FromFile(@"images\Characters\Orisa\OrisaMain.jpg");
+            ZaryaPic.Image = Image.FromFile(@"images\Characters\Zarya\ZaryaMain.jpg");
+            WinstonPic.Image = Image.FromFile(@"images\Characters\Winston\WinstonMain.jpg");
+            TaranPic.Image = Image.FromFile(@"images\Characters\Taran\TaranMain.jpg");
+            RoadhogPic.Image = Image.FromFile(@"images\Characters\Roadhog\RoadhogMain.jpg");
+            JunkratPic.Image = Image.FromFile(@"images\Characters\Junkrat\JunkratMain.jpg");
+            AnaFlag = false;
+            MercyFlag = false;
+            ReaperFlag = false;
+            JunkratFlag = false;
+            DoomfistFlag = false;
+            BastionFlag = false;
+            MeiFlag = false;
+            WidowFlag = false;
+            SymmetraFlag = false;
+            SoldierFlag = false;
+            SombraFlag = false;
+            TorbjornFlag = false;
+            TracerFlag = false;
+            PharraFlag = false;
+            HanzoFlag = false;
+            MccreeFlag = false;
+            AshFlag = false;
+            GenjiFlag = false;
+            ZaryaFlag = false;
+            OrisaFlag = false;
+            ReinhardtFlag = false;
+            WinstonFlag = false;
+            RoadhogFlag = false;
+            TaranFlag = false;
+            DvaFlag = false;
+            BaptistFlag = false;
+            BrigittaFlag = false;
+            ZenyattaFlag = false;
+            LucioFlag = false;
+            MoiraFlag = false;
+
+            AnaPoints = 0;
+            MercyPoints = 0;
+            ReaperPoints = 0;
+            JunkratPoints = 0;
+            DoomfistPoints = 0;
+            BastionPoints = 0;
+            MeiPoints = 0;
+            WidowPoints = 0;
+            SymmetraPoints = 0;
+            SoldierPoints = 0;
+            SombraPoints = 0;
+            TorbjornPoints = 0;
+            TracerPoints = 0;
+            PharraPoints = 0;
+            HanzoPoints = 0;
+            MccreePoints = 0;
+            AshPoints = 0;
+            GenjiPoints = 0;
+            ZaryaPoints = 0;
+            OrisaPoints = 0;
+            ReinhardtPoints = 0;
+            WinstonPoints = 0;
+            RoadhogPoints = 0;
+            TaranPoints = 0;
+            DvaPoints = 0;
+            BaptistPoints = 0;
+            BrigittaPoints = 0;
+            ZenyattaPoints = 0;
+            LucioPoints = 0;
+            MoiraPoints = 0;
+
+            PrefferableDDs.Clear();
+            PrefferableHealers.Clear();
+            PrefferableTanks.Clear();
+
+            MaxHeroPoints = 0;
         }
-    }    
+    }
 }
