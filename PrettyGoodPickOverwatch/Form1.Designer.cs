@@ -102,7 +102,7 @@
             this.MainImage.Location = new System.Drawing.Point(-18, 0);
             this.MainImage.Margin = new System.Windows.Forms.Padding(4);
             this.MainImage.Name = "MainImage";
-            this.MainImage.Size = new System.Drawing.Size(1602, 818);
+            this.MainImage.Size = new System.Drawing.Size(1560, 818);
             this.MainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MainImage.TabIndex = 0;
             this.MainImage.TabStop = false;
@@ -459,7 +459,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(555, 298);
+            this.pictureBox1.Location = new System.Drawing.Point(555, 328);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(451, 111);
@@ -472,11 +472,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Font = new System.Drawing.Font("BigNoodleTooOblique", 24F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(536, 249);
+            this.label1.Location = new System.Drawing.Point(547, 216);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(478, 42);
+            this.label1.Size = new System.Drawing.Size(460, 43);
             this.label1.TabIndex = 58;
             this.label1.Text = "Выберете 5 героев в вашей команде\r\n";
             // 
@@ -490,13 +490,13 @@
             this.AshPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AshPic.TabIndex = 46;
             this.AshPic.TabStop = false;
-            this.AshPic.Click += new System.EventHandler(this.AshPic_Click);
+            this.AshPic.Click += new System.EventHandler(this.SymmetraPic_Click);
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1584, 814);
+            this.ClientSize = new System.Drawing.Size(1543, 814);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BaptistPic);

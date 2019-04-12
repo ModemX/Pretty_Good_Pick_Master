@@ -111,22 +111,7 @@ namespace PrettyGoodPickOverwatch
         }
         private void AshPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Ash\Ash";
-            damageDealerMethod(AshPic, AshFlag, path);
-            AshFlag = !AshFlag;
 
-            if (AshFlag)
-            {
-                MercyPoints++;
-                ReinhardtPoints++;
-                TaranPoints++;
-            }
-            else
-            {
-                MercyPoints--;
-                ReinhardtPoints--;
-                TaranPoints--;
-            }
         }
         private void MercyPic_Click(object sender, EventArgs e)
         {
@@ -810,7 +795,7 @@ namespace PrettyGoodPickOverwatch
                 }
             }
             blockButtons = true;
-            label1.Text = "Жёлтым отображены лучшие герои для выбора";
+            label1.Text = "Жёлтым отображены подходящие герои для выбора,\nа зеленым наиболее выгодные";
 
             //Замена подсвеченных героев на оптимального
         }
@@ -1163,6 +1148,8 @@ namespace PrettyGoodPickOverwatch
             PrefferableTanks.Clear();
 
             MaxHeroPoints = 0;
+
+            label1.Text = "Выберете 5 героев в вашей команде";
         }
     }
 }
