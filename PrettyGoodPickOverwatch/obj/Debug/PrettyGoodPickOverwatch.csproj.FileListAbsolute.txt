@@ -27,4 +27,3 @@ D:\Broken_Files\D\Work\Курс 3 (семестр 2)\ТРПО\Pretty-good-pick-m
 D:\Broken_Files\D\Work\Курс 3 (семестр 2)\ТРПО\Pretty-good-pick-master\PrettyGoodPickOverwatch\obj\Debug\PrettyGoodPickOverwatch.csproj.CoreCompileInputs.cache
 D:\Broken_Files\D\Work\Курс 3 (семестр 2)\ТРПО\Pretty-good-pick-master\PrettyGoodPickOverwatch\obj\Debug\PrettyGoodPickOverwatch.exe
 D:\Broken_Files\D\Work\Курс 3 (семестр 2)\ТРПО\Pretty-good-pick-master\PrettyGoodPickOverwatch\obj\Debug\PrettyGoodPickOverwatch.pdb
-D:\Broken_Files\D\Work\Курс 3 (семестр 2)\ТРПО\Pretty-good-pick-master\PrettyGoodPickOverwatch\obj\Debug\PrettyGoodPickOverwatch.Heroes.resources
