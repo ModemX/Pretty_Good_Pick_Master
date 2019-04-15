@@ -490,7 +490,7 @@
             this.AshPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AshPic.TabIndex = 46;
             this.AshPic.TabStop = false;
-            this.AshPic.Click += new System.EventHandler(this.SymmetraPic_Click);
+            this.AshPic.Click += new System.EventHandler(this.AshPic_Click);
             // 
             // mainForm
             // 
@@ -531,6 +531,7 @@
             this.Controls.Add(this.DvaPic);
             this.Controls.Add(this.MainImage);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pretty good pick";

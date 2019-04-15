@@ -89,14 +89,11 @@ namespace PrettyGoodPickOverwatch
         public mainForm()
         {
             InitializeComponent();
+            pictureBox1_Click(new object(), new EventArgs());
         }
         private void AnaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Ana\Ana";
-            healerMethod(AnaPic, AnaFlag, path);
-            AnaFlag = !AnaFlag;
-
-            if (AnaFlag)
+            if (!AnaFlag)
             {
                 ReinhardtPoints++;
                 GenjiPoints++;
@@ -108,18 +105,33 @@ namespace PrettyGoodPickOverwatch
                 GenjiPoints--;
                 LucioPoints--;
             }
+
+            string path = @"images\Characters\Ana\Ana";
+            healerMethod(AnaPic, AnaFlag, path);
+            AnaFlag = !AnaFlag;
         }
         private void AshPic_Click(object sender, EventArgs e)
         {
+            if (!AshFlag)
+            {
+                MercyPoints++;
+                ReinhardtPoints++;
+                TaranPoints++;
+            }
+            else
+            {
+                MercyPoints--;
+                ReinhardtPoints--;
+                TaranPoints--;
+            }
 
+            string path = @"images\Characters\Ash\Ash";
+            damageDealerMethod(AshPic, AshFlag, path);
+            AshFlag = !AshFlag;
         }
         private void MercyPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Mercy\Mercy";
-            healerMethod(MercyPic, MercyFlag, path);
-            MercyFlag = !MercyFlag;
-
-            if (MercyFlag)
+            if (!MercyFlag)
             {
                 PharraPoints++;
                 BastionPoints++;
@@ -131,14 +143,14 @@ namespace PrettyGoodPickOverwatch
                 BastionPoints--;
                 OrisaPoints--;
             }
+
+            string path = @"images\Characters\Mercy\Mercy";
+            healerMethod(MercyPic, MercyFlag, path);
+            MercyFlag = !MercyFlag;
         }
         private void ReaperPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Reaper\Reaper";
-            damageDealerMethod(ReaperPic, ReaperFlag, path);
-            ReaperFlag = !ReaperFlag;
-
-            if (ReaperFlag)
+            if (!ReaperFlag)
             {
                 MeiPoints++;
                 ZenyattaPoints++;
@@ -150,14 +162,14 @@ namespace PrettyGoodPickOverwatch
                 ZenyattaPoints--;
                 ZaryaPoints--;
             }
+
+            string path = @"images\Characters\Reaper\Reaper";
+            damageDealerMethod(ReaperPic, ReaperFlag, path);
+            ReaperFlag = !ReaperFlag;
         }
         private void JunkratPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Junkrat\Junkrat";
-            damageDealerMethod(JunkratPic, JunkratFlag, path);
-            JunkratFlag = !JunkratFlag;
-
-            if (JunkratFlag)
+            if (!JunkratFlag)
             {
                 ReinhardtPoints++;
                 ZaryaPoints++;
@@ -169,14 +181,14 @@ namespace PrettyGoodPickOverwatch
                 ZaryaPoints--;
                 ReaperPoints--;
             }
+
+            string path = @"images\Characters\Junkrat\Junkrat";
+            damageDealerMethod(JunkratPic, JunkratFlag, path);
+            JunkratFlag = !JunkratFlag;
         }
         private void DoomfistPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Doomfist\Doomfist";
-            damageDealerMethod(DoomfistPic, DoomfistFlag, path);
-            DoomfistFlag = !DoomfistFlag;
-
-            if (DoomfistFlag)
+            if (!DoomfistFlag)
             {
                 BastionPoints++;
                 MccreePoints++;
@@ -188,13 +200,13 @@ namespace PrettyGoodPickOverwatch
                 MccreePoints--;
                 ReaperPoints--;
             }
+
+            string path = @"images\Characters\Doomfist\Doomfist";
+            damageDealerMethod(DoomfistPic, DoomfistFlag, path);
+            DoomfistFlag = !DoomfistFlag;
         }
         private void BastionPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Bastion\Bastion";
-            damageDealerMethod(BastionPic, BastionFlag, path);
-            BastionFlag = !BastionFlag;
-
             if (BastionFlag)
             {
                 OrisaPoints++;
@@ -207,14 +219,14 @@ namespace PrettyGoodPickOverwatch
                 MercyPoints--;
                 SymmetraPoints--;
             }
+
+            string path = @"images\Characters\Bastion\Bastion";
+            damageDealerMethod(BastionPic, BastionFlag, path);
+            BastionFlag = !BastionFlag;
         }
         private void MeiPic_Click(object sender, EventArgs e)
-        {
-            string path = @"images\Characters\Mei\Mei";
-            damageDealerMethod(MeiPic, MeiFlag, path);
-            MeiFlag = !MeiFlag;
-
-            if (MeiFlag)
+        {            
+            if (!MeiFlag)
             {
                 ReaperPoints++;
                 ReinhardtPoints++;
@@ -226,14 +238,14 @@ namespace PrettyGoodPickOverwatch
                 ReinhardtPoints--;
                 LucioPoints--;
             }
+
+            string path = @"images\Characters\Mei\Mei";
+            damageDealerMethod(MeiPic, MeiFlag, path);
+            MeiFlag = !MeiFlag;
         }
         private void WidowPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Widow\Widow";
-            damageDealerMethod(WidowPic, WidowFlag, path);
-            WidowFlag = !WidowFlag;
-
-            if (WidowFlag)
+            if (!WidowFlag)
             {
                 HanzoPoints++;
                 WinstonPoints++;
@@ -245,14 +257,14 @@ namespace PrettyGoodPickOverwatch
                 WinstonPoints--;
                 DvaPoints--;
             }
+
+            string path = @"images\Characters\Widow\Widow";
+            damageDealerMethod(WidowPic, WidowFlag, path);
+            WidowFlag = !WidowFlag;
         }
         private void SymmetraPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Symmetra\Symmetra";
-            damageDealerMethod(SymmetraPic, SymmetraFlag, path);
-            SymmetraFlag = !SymmetraFlag;
-
-            if (SymmetraFlag)
+            if (!SymmetraFlag)
             {
                 BastionPoints++;
                 OrisaPoints++;
@@ -264,14 +276,14 @@ namespace PrettyGoodPickOverwatch
                 OrisaPoints--;
                 JunkratPoints--;
             }
+
+            string path = @"images\Characters\Symmetra\Symmetra";
+            damageDealerMethod(SymmetraPic, SymmetraFlag, path);
+            SymmetraFlag = !SymmetraFlag;
         }
         private void SoldierPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Soldier\Soldier";
-            damageDealerMethod(SoldierPic, SoldierFlag, path);
-            SoldierFlag = !SoldierFlag;
-
-            if (SoldierFlag)
+            if (!SoldierFlag)
             {
                 SombraPoints++;
                 AnaPoints++;
@@ -283,14 +295,14 @@ namespace PrettyGoodPickOverwatch
                 AnaPoints--;
                 ReinhardtPoints--;
             }
+
+            string path = @"images\Characters\Soldier\Soldier";
+            damageDealerMethod(SoldierPic, SoldierFlag, path);
+            SoldierFlag = !SoldierFlag;
         }
         private void SombraPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Sombra\Sombra";
-            damageDealerMethod(SombraPic, SombraFlag, path);
-            SombraFlag = !SombraFlag;
-
-            if (SombraFlag)
+            if (!SombraFlag)
             {
                 DvaPoints++;
                 ZaryaPoints++;
@@ -302,14 +314,14 @@ namespace PrettyGoodPickOverwatch
                 ZaryaPoints--;
                 ReinhardtPoints--;
             }
+
+            string path = @"images\Characters\Sombra\Sombra";
+            damageDealerMethod(SombraPic, SombraFlag, path);
+            SombraFlag = !SombraFlag;
         }
         private void TorbjornPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Torbjorn\Torbjorn";
-            damageDealerMethod(TorbjornPic, TorbjornFlag, path);
-            TorbjornFlag = !TorbjornFlag;
-
-            if (TorbjornFlag)
+            if (!TorbjornFlag)
             {
                 ReinhardtPoints++;
                 OrisaPoints++;
@@ -321,14 +333,14 @@ namespace PrettyGoodPickOverwatch
                 OrisaPoints--;
                 JunkratPoints--;
             }
+
+            string path = @"images\Characters\Torbjorn\Torbjorn";
+            damageDealerMethod(TorbjornPic, TorbjornFlag, path);
+            TorbjornFlag = !TorbjornFlag;
         }
         private void TracerPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Tracer\Tracer";
-            damageDealerMethod(TracerPic, TracerFlag, path);
-            TracerFlag = !TracerFlag;
-
-            if (TracerFlag)
+            if (!TracerFlag)
             {
                 GenjiPoints++;
                 WinstonPoints++;
@@ -340,14 +352,14 @@ namespace PrettyGoodPickOverwatch
                 WinstonPoints--;
                 DvaPoints--;
             }
+
+            string path = @"images\Characters\Tracer\Tracer";
+            damageDealerMethod(TracerPic, TracerFlag, path);
+            TracerFlag = !TracerFlag;
         }
         private void PharraPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Pharra\Pharra";
-            damageDealerMethod(PharraPic, PharraFlag, path);
-            PharraFlag = !PharraFlag;
-
-            if (PharraFlag)
+            if (!PharraFlag)
             {
                 MercyPoints++;
                 ZenyattaPoints++;
@@ -359,14 +371,14 @@ namespace PrettyGoodPickOverwatch
                 ZenyattaPoints--;
                 ZaryaPoints--;
             }
+
+            string path = @"images\Characters\Pharra\Pharra";
+            damageDealerMethod(PharraPic, PharraFlag, path);
+            PharraFlag = !PharraFlag;
         }
         private void HanzoPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Hanzo\Hanzo";
-            damageDealerMethod(HanzoPic, HanzoFlag, path);
-            HanzoFlag = !HanzoFlag;
-
-            if (HanzoFlag)
+            if (!HanzoFlag)
             {
                 WidowPoints++;
                 MccreePoints++;
@@ -378,14 +390,14 @@ namespace PrettyGoodPickOverwatch
                 MccreePoints--;
                 AshPoints--;
             }
+
+            string path = @"images\Characters\Hanzo\Hanzo";
+            damageDealerMethod(HanzoPic, HanzoFlag, path);
+            HanzoFlag = !HanzoFlag;
         }
         private void MccreePic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Mccree\Mccree";
-            damageDealerMethod(MccreePic, MccreeFlag, path);
-            MccreeFlag = !MccreeFlag;
-
-            if (MccreeFlag)
+            if (!MccreeFlag)
             {
                 ReaperPoints++;
                 ReinhardtPoints++;
@@ -397,14 +409,14 @@ namespace PrettyGoodPickOverwatch
                 ReinhardtPoints--;
                 LucioPoints--;
             }
+
+            string path = @"images\Characters\Mccree\Mccree";
+            damageDealerMethod(MccreePic, MccreeFlag, path);
+            MccreeFlag = !MccreeFlag;
         }
         private void GenjiPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Genji\Genji";
-            damageDealerMethod(GenjiPic, GenjiFlag, path);
-            GenjiFlag = !GenjiFlag;
-
-            if (GenjiFlag)
+            if (!GenjiFlag)
             {
                 WinstonPoints++;
                 TaranPoints++;
@@ -416,14 +428,14 @@ namespace PrettyGoodPickOverwatch
                 TaranPoints--;
                 TracerPoints--;
             }
+
+            string path = @"images\Characters\Genji\Genji";
+            damageDealerMethod(GenjiPic, GenjiFlag, path);
+            GenjiFlag = !GenjiFlag;
         }
         private void ZaryaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Zarya\Zarya";
-            tankMethod(ZaryaPic, ZaryaFlag, path);
-            ZaryaFlag = !ZaryaFlag;
-
-            if (ZaryaFlag)
+            if (!ZaryaFlag)
             {
                 ReinhardtPoints++;
                 HanzoPoints++;
@@ -435,14 +447,14 @@ namespace PrettyGoodPickOverwatch
                 HanzoPoints--;
                 TaranPoints--;
             }
+
+            string path = @"images\Characters\Zarya\Zarya";
+            tankMethod(ZaryaPic, ZaryaFlag, path);
+            ZaryaFlag = !ZaryaFlag;
         }
         private void OrisaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Orisa\Orisa";
-            tankMethod(OrisaPic, OrisaFlag, path);
-            OrisaFlag = !OrisaFlag;
-
-            if (OrisaFlag)
+            if (!OrisaFlag)
             {
                 RoadhogPoints++;
                 AshPoints++;
@@ -454,14 +466,14 @@ namespace PrettyGoodPickOverwatch
                 AshPoints--;
                 HanzoPoints--;
             }
+
+            string path = @"images\Characters\Orisa\Orisa";
+            tankMethod(OrisaPic, OrisaFlag, path);
+            OrisaFlag = !OrisaFlag;
         }
         private void ReinhardtPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Reinhardt\Reinhardt";
-            tankMethod(ReinhardtPic, ReinhardtFlag, path);
-            ReinhardtFlag = !ReinhardtFlag;
-
-            if (ReinhardtFlag)
+            if (!ReinhardtFlag)
             {
                 ZaryaPoints++;
                 AnaPoints++;
@@ -473,14 +485,14 @@ namespace PrettyGoodPickOverwatch
                 AnaPoints--;
                 LucioPoints--;
             }
+
+            string path = @"images\Characters\Reinhardt\Reinhardt";
+            tankMethod(ReinhardtPic, ReinhardtFlag, path);
+            ReinhardtFlag = !ReinhardtFlag;
         }
         private void WinstonPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Winston\Winston";
-            tankMethod(WinstonPic, WinstonFlag, path);
-            WinstonFlag = !WinstonFlag;
-
-            if (WinstonFlag)
+            if (!WinstonFlag)
             {
                 DvaPoints++;
                 GenjiPoints++;
@@ -492,14 +504,14 @@ namespace PrettyGoodPickOverwatch
                 GenjiPoints--;
                 TracerPoints--;
             }
+
+            string path = @"images\Characters\Winston\Winston";
+            tankMethod(WinstonPic, WinstonFlag, path);
+            WinstonFlag = !WinstonFlag;
         }
         private void RoadhogPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Roadhog\Roadhog";
-            tankMethod(RoadhogPic, RoadhogFlag, path);
-            RoadhogFlag = !RoadhogFlag;
-
-            if (RoadhogFlag)
+            if (!RoadhogFlag)
             {
                 OrisaPoints++;
                 ZaryaPoints++;
@@ -511,14 +523,14 @@ namespace PrettyGoodPickOverwatch
                 ZaryaPoints--;
                 ZenyattaPoints--;
             }
+
+            string path = @"images\Characters\Roadhog\Roadhog";
+            tankMethod(RoadhogPic, RoadhogFlag, path);
+            RoadhogFlag = !RoadhogFlag;
         }
         private void TaranPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Taran\Taran";
-            tankMethod(TaranPic, TaranFlag, path);
-            TaranFlag = !TaranFlag;
-
-            if (TaranFlag)
+            if (!TaranFlag)
             {
                 OrisaPoints++;
                 AshPoints++;
@@ -530,14 +542,14 @@ namespace PrettyGoodPickOverwatch
                 AshPoints--;
                 GenjiPoints--;
             }
+
+            string path = @"images\Characters\Taran\Taran";
+            tankMethod(TaranPic, TaranFlag, path);
+            TaranFlag = !TaranFlag;
         }
         private void DvaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\d.va\Dva";
-            tankMethod(DvaPic, DvaFlag, path);
-            DvaFlag = !DvaFlag;
-
-            if (DvaFlag)
+            if (!DvaFlag)
             {
                 WinstonPoints++;
                 TaranPoints++;
@@ -549,14 +561,14 @@ namespace PrettyGoodPickOverwatch
                 TaranPoints--;
                 SombraPoints--;
             }
+
+            string path = @"images\Characters\d.va\Dva";
+            tankMethod(DvaPic, DvaFlag, path);
+            DvaFlag = !DvaFlag;
         }
         private void BaptistPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Baptist\Baptist";
-            healerMethod(BaptistPic, BaptistFlag, path);
-            BaptistFlag = !BaptistFlag;
-
-            if (BaptistFlag)
+            if (!BaptistFlag)
             {
                 BastionPoints++;
                 OrisaPoints++;
@@ -568,14 +580,14 @@ namespace PrettyGoodPickOverwatch
                 OrisaPoints--;
                 MccreePoints--;
             }
+
+            string path = @"images\Characters\Baptist\Baptist";
+            healerMethod(BaptistPic, BaptistFlag, path);
+            BaptistFlag = !BaptistFlag;
         }
         private void BrigittaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Brigitta\Brigitta";
-            healerMethod(BrigittaPic, BrigittaFlag, path);
-            BrigittaFlag = !BrigittaFlag;
-
-            if (BrigittaFlag)
+            if (!BrigittaFlag)
             {
                 ReinhardtPoints++;
                 LucioPoints++;
@@ -587,14 +599,14 @@ namespace PrettyGoodPickOverwatch
                 LucioPoints--;
                 ReaperPoints--;
             }
+
+            string path = @"images\Characters\Brigitta\Brigitta";
+            healerMethod(BrigittaPic, BrigittaFlag, path);
+            BrigittaFlag = !BrigittaFlag;
         }
         private void ZenyattaPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Zenyatta\Zenyatta";
-            healerMethod(ZenyattaPic, ZenyattaFlag, path);
-            ZenyattaFlag = !ZenyattaFlag;
-
-            if (ZenyattaFlag)
+            if (!ZenyattaFlag)
             {
                 AnaPoints++;
                 WinstonPoints++;
@@ -606,14 +618,14 @@ namespace PrettyGoodPickOverwatch
                 WinstonPoints--;
                 TracerPoints--;
             }
+
+            string path = @"images\Characters\Zenyatta\Zenyatta";
+            healerMethod(ZenyattaPic, ZenyattaFlag, path);
+            ZenyattaFlag = !ZenyattaFlag;
         }
         private void LucioPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Lucio\Lucio";
-            healerMethod(LucioPic, LucioFlag, path);
-            LucioFlag = !LucioFlag;
-
-            if (LucioFlag)
+            if (!LucioFlag)
             {
                 ReinhardtPoints++;
                 ZaryaPoints++;
@@ -625,14 +637,14 @@ namespace PrettyGoodPickOverwatch
                 ZaryaPoints--;
                 ReaperPoints--;
             }
+
+            string path = @"images\Characters\Lucio\Lucio";
+            healerMethod(LucioPic, LucioFlag, path);
+            LucioFlag = !LucioFlag;
         }
         private void MoiraPic_Click(object sender, EventArgs e)
         {
-            string path = @"images\Characters\Moira\Moira";
-            healerMethod(MoiraPic, MoiraFlag, path);
-            MoiraFlag = !MoiraFlag;
-
-            if (MoiraFlag)
+            if (!MoiraFlag)
             {
                 ReinhardtPoints++;
                 OrisaPoints++;
@@ -644,6 +656,10 @@ namespace PrettyGoodPickOverwatch
                 OrisaPoints--;
                 RoadhogPoints--;
             }
+
+            string path = @"images\Characters\Moira\Moira";
+            healerMethod(MoiraPic, MoiraFlag, path);
+            MoiraFlag = !MoiraFlag;
         }
 
         public void healerMethod(PictureBox box, bool flag, string path)
@@ -862,131 +878,129 @@ namespace PrettyGoodPickOverwatch
             if (MaxHeroPoints < MoiraPoints)
                 MaxHeroPoints = MoiraPoints;
 
-            if (MaxHeroPoints == AnaPoints)
+            if (MaxHeroPoints == AnaPoints && !AnaFlag)
                 PrefferableHealers.Add("Ana");
-            if (MaxHeroPoints == MercyPoints)
+            if (MaxHeroPoints == MercyPoints && !MercyFlag)
                 PrefferableHealers.Add("Mercy");
-            if (MaxHeroPoints == ReaperPoints)
+            if (MaxHeroPoints == ReaperPoints && !ReaperFlag)
                 PrefferableDDs.Add("Reaper");
-            if (MaxHeroPoints == JunkratPoints)
+            if (MaxHeroPoints == JunkratPoints && !JunkratFlag)
                 PrefferableDDs.Add("Junkrat");
-            if (MaxHeroPoints == DoomfistPoints)
+            if (MaxHeroPoints == DoomfistPoints && !DoomfistFlag)
                 PrefferableDDs.Add("Doomfist");
-            if (MaxHeroPoints == BastionPoints)
+            if (MaxHeroPoints == BastionPoints && !BastionFlag)
                 PrefferableDDs.Add("Bastion");
-            if (MaxHeroPoints == MeiPoints)
+            if (MaxHeroPoints == MeiPoints && !MeiFlag)
                 PrefferableDDs.Add("Mei");
-            if (MaxHeroPoints == WidowPoints)
+            if (MaxHeroPoints == WidowPoints && !WidowFlag)
                 PrefferableDDs.Add("Widow");
-            if (MaxHeroPoints == SymmetraPoints)
+            if (MaxHeroPoints == SymmetraPoints && !SymmetraFlag)
                 PrefferableDDs.Add("Symmetra");
-            if (MaxHeroPoints == SoldierPoints)
+            if (MaxHeroPoints == SoldierPoints && !SoldierFlag)
                 PrefferableDDs.Add("Soldier");
-            if (MaxHeroPoints == SombraPoints)
+            if (MaxHeroPoints == SombraPoints && !SombraFlag)
                 PrefferableDDs.Add("Sombra");
-            if (MaxHeroPoints == TorbjornPoints)
+            if (MaxHeroPoints == TorbjornPoints && !TorbjornFlag)
                 PrefferableDDs.Add("Torbjorn");
-            if (MaxHeroPoints == TracerPoints)
+            if (MaxHeroPoints == TracerPoints && !TracerFlag)
                 PrefferableDDs.Add("Tracer");
-            if (MaxHeroPoints == PharraPoints)
+            if (MaxHeroPoints == PharraPoints && !PharraFlag)
                 PrefferableDDs.Add("Pharra");
-            if (MaxHeroPoints == HanzoPoints)
+            if (MaxHeroPoints == HanzoPoints && !HanzoFlag)
                 PrefferableDDs.Add("Hanzo");
-            if (MaxHeroPoints == MccreePoints)
+            if (MaxHeroPoints == MccreePoints && !MccreeFlag)
                 PrefferableDDs.Add("Mccree");
-            if (MaxHeroPoints == AshPoints)
+            if (MaxHeroPoints == AshPoints && !AshFlag)
                 PrefferableDDs.Add("Ash");
-            if (MaxHeroPoints == GenjiPoints)
+            if (MaxHeroPoints == GenjiPoints && !GenjiFlag)
                 PrefferableDDs.Add("Genji");
-            if (MaxHeroPoints == ZaryaPoints)
+            if (MaxHeroPoints == ZaryaPoints && !ZaryaFlag)
                 PrefferableTanks.Add("Zarya");
-            if (MaxHeroPoints == OrisaPoints)
+            if (MaxHeroPoints == OrisaPoints && !OrisaFlag)
                 PrefferableTanks.Add("Orisa");
-            if (MaxHeroPoints == ReinhardtPoints)
+            if (MaxHeroPoints == ReinhardtPoints && !ReinhardtFlag)
                 PrefferableTanks.Add("Reinhardt");
-            if (MaxHeroPoints == WinstonPoints)
+            if (MaxHeroPoints == WinstonPoints && !WinstonFlag)
                 PrefferableTanks.Add("Winston");
-            if (MaxHeroPoints == RoadhogPoints)
+            if (MaxHeroPoints == RoadhogPoints && !RoadhogFlag)
                 PrefferableTanks.Add("Roadhog");
-            if (MaxHeroPoints == TaranPoints)
+            if (MaxHeroPoints == TaranPoints && !TaranFlag)
                 PrefferableTanks.Add("Taran");
-            if (MaxHeroPoints == DvaPoints)
+            if (MaxHeroPoints == DvaPoints && !DvaFlag)
                 PrefferableTanks.Add("Dva");
-            if (MaxHeroPoints == BaptistPoints)
+            if (MaxHeroPoints == BaptistPoints && !BaptistFlag)
                 PrefferableHealers.Add("Baptist");
-            if (MaxHeroPoints == BrigittaPoints)
+            if (MaxHeroPoints == BrigittaPoints && !BrigittaFlag)
                 PrefferableHealers.Add("Brigitta");
-            if (MaxHeroPoints == ZenyattaPoints)
+            if (MaxHeroPoints == ZenyattaPoints && !ZenyattaFlag)
                 PrefferableHealers.Add("Zenyatta");
-            if (MaxHeroPoints == LucioPoints)
+            if (MaxHeroPoints == LucioPoints && !LucioFlag)
                 PrefferableHealers.Add("Lucio");
-            if (MaxHeroPoints == MoiraPoints)
+            if (MaxHeroPoints == MoiraPoints && !MoiraFlag)
                 PrefferableHealers.Add("Moira");
         }
         void Replace(string Hero)
         {
             if (Hero == "Ana")
-                AnaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
-
+                AnaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Mercy")
-                MercyPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                MercyPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Reaper")
-                ReaperPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                ReaperPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Junkrat")
-                JunkratPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                JunkratPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Doomfist")
-                DoomfistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                DoomfistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Bastion")
-                BastionPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                BastionPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Mei")
-                MeiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                MeiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Widow")
-                WidowPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                WidowPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Symmetra")
-                SymmetraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                SymmetraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Soldier")
-                SoldierPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                SoldierPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "")
-                SombraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                SombraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Torbjorn")
-                TorbjornPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                TorbjornPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Tracer")
-                TracerPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                TracerPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Pharra")
-                PharraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                PharraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Hanzo")
-                HanzoPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                HanzoPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Mccree")
-                MccreePic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                MccreePic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Ash")
-                AshPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                AshPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Genji")
-                GenjiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                GenjiPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Zarya")
-                ZaryaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                ZaryaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Orisa")
-                OrisaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                OrisaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Reinhardt")
-                ReinhardtPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                ReinhardtPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Winston")
-                WinstonPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                WinstonPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Roadhog")
-                RoadhogPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                RoadhogPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Taran")
-                TaranPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                TaranPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Dva")
-                DvaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                DvaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Baptist")
-                BaptistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                BaptistPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Brigitta")
-                BrigittaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                BrigittaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Zenyatta")
-                ZenyattaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                ZenyattaPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Lucio")
-                LucioPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
+                LucioPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
             if (Hero == "Moira")
-                MoiraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.jpg");
-
+                MoiraPic.Image = Image.FromFile(@$"images\Characters\{Hero}\{Hero}Green.png");
         }
 
         public void yellowTank()
