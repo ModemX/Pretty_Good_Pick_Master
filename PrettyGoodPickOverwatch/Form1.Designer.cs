@@ -98,7 +98,7 @@
             // 
             // MainImage
             // 
-            this.MainImage.Image = ((System.Drawing.Image)(resources.GetObject("MainImage.Image")));
+            this.MainImage.Image = global::PrettyGoodPickOverwatch.Heroes.MainPicture;
             this.MainImage.Location = new System.Drawing.Point(-18, 0);
             this.MainImage.Margin = new System.Windows.Forms.Padding(4);
             this.MainImage.Name = "MainImage";
@@ -109,7 +109,7 @@
             // 
             // BaptistPic
             // 
-            this.BaptistPic.Image = ((System.Drawing.Image)(resources.GetObject("BaptistPic.Image")));
+            this.BaptistPic.Image = global::PrettyGoodPickOverwatch.Heroes.BaptistMain;
             this.BaptistPic.Location = new System.Drawing.Point(1306, 447);
             this.BaptistPic.Margin = new System.Windows.Forms.Padding(4);
             this.BaptistPic.Name = "BaptistPic";
@@ -121,7 +121,7 @@
             // 
             // BrigittaPic
             // 
-            this.BrigittaPic.Image = ((System.Drawing.Image)(resources.GetObject("BrigittaPic.Image")));
+            this.BrigittaPic.Image = global::PrettyGoodPickOverwatch.Heroes.BrigittaMain;
             this.BrigittaPic.Location = new System.Drawing.Point(1421, 447);
             this.BrigittaPic.Margin = new System.Windows.Forms.Padding(4);
             this.BrigittaPic.Name = "BrigittaPic";
@@ -133,7 +133,7 @@
             // 
             // ZenyattaPic
             // 
-            this.ZenyattaPic.Image = ((System.Drawing.Image)(resources.GetObject("ZenyattaPic.Image")));
+            this.ZenyattaPic.Image = global::PrettyGoodPickOverwatch.Heroes.ZenyattaMain;
             this.ZenyattaPic.Location = new System.Drawing.Point(1191, 626);
             this.ZenyattaPic.Margin = new System.Windows.Forms.Padding(4);
             this.ZenyattaPic.Name = "ZenyattaPic";
@@ -145,7 +145,7 @@
             // 
             // AnaPic
             // 
-            this.AnaPic.Image = ((System.Drawing.Image)(resources.GetObject("AnaPic.Image")));
+            this.AnaPic.Image = global::PrettyGoodPickOverwatch.Heroes.AnaMain;
             this.AnaPic.Location = new System.Drawing.Point(1077, 447);
             this.AnaPic.Margin = new System.Windows.Forms.Padding(4);
             this.AnaPic.Name = "AnaPic";
@@ -157,7 +157,7 @@
             // 
             // MercyPic
             // 
-            this.MercyPic.Image = ((System.Drawing.Image)(resources.GetObject("MercyPic.Image")));
+            this.MercyPic.Image = global::PrettyGoodPickOverwatch.Heroes.MercyMain;
             this.MercyPic.Location = new System.Drawing.Point(1191, 447);
             this.MercyPic.Margin = new System.Windows.Forms.Padding(4);
             this.MercyPic.Name = "MercyPic";
@@ -169,7 +169,7 @@
             // 
             // LucioPic
             // 
-            this.LucioPic.Image = ((System.Drawing.Image)(resources.GetObject("LucioPic.Image")));
+            this.LucioPic.Image = global::PrettyGoodPickOverwatch.Heroes.LucioMain;
             this.LucioPic.Location = new System.Drawing.Point(1306, 626);
             this.LucioPic.Margin = new System.Windows.Forms.Padding(4);
             this.LucioPic.Name = "LucioPic";
@@ -181,7 +181,7 @@
             // 
             // MoiraPic
             // 
-            this.MoiraPic.Image = ((System.Drawing.Image)(resources.GetObject("MoiraPic.Image")));
+            this.MoiraPic.Image = global::PrettyGoodPickOverwatch.Heroes.MoiraMain;
             this.MoiraPic.Location = new System.Drawing.Point(1421, 626);
             this.MoiraPic.Margin = new System.Windows.Forms.Padding(4);
             this.MoiraPic.Name = "MoiraPic";
@@ -193,7 +193,7 @@
             // 
             // WidowPic
             // 
-            this.WidowPic.Image = ((System.Drawing.Image)(resources.GetObject("WidowPic.Image")));
+            this.WidowPic.Image = global::PrettyGoodPickOverwatch.Heroes.WidowMain;
             this.WidowPic.Location = new System.Drawing.Point(361, 267);
             this.WidowPic.Margin = new System.Windows.Forms.Padding(4);
             this.WidowPic.Name = "WidowPic";
@@ -205,7 +205,7 @@
             // 
             // DoomfistPic
             // 
-            this.DoomfistPic.Image = ((System.Drawing.Image)(resources.GetObject("DoomfistPic.Image")));
+            this.DoomfistPic.Image = global::PrettyGoodPickOverwatch.Heroes.DoomfistMain;
             this.DoomfistPic.Location = new System.Drawing.Point(17, 267);
             this.DoomfistPic.Margin = new System.Windows.Forms.Padding(4);
             this.DoomfistPic.Name = "DoomfistPic";
@@ -217,7 +217,7 @@
             // 
             // HanzoPic
             // 
-            this.HanzoPic.Image = ((System.Drawing.Image)(resources.GetObject("HanzoPic.Image")));
+            this.HanzoPic.Image = global::PrettyGoodPickOverwatch.Heroes.HanzoMain;
             this.HanzoPic.Location = new System.Drawing.Point(247, 626);
             this.HanzoPic.Margin = new System.Windows.Forms.Padding(4);
             this.HanzoPic.Name = "HanzoPic";
@@ -229,7 +229,7 @@
             // 
             // PharraPic
             // 
-            this.PharraPic.Image = ((System.Drawing.Image)(resources.GetObject("PharraPic.Image")));
+            this.PharraPic.Image = global::PrettyGoodPickOverwatch.Heroes.PharraMain;
             this.PharraPic.Location = new System.Drawing.Point(132, 626);
             this.PharraPic.Margin = new System.Windows.Forms.Padding(4);
             this.PharraPic.Name = "PharraPic";
@@ -241,7 +241,7 @@
             // 
             // TracerPic
             // 
-            this.TracerPic.Image = ((System.Drawing.Image)(resources.GetObject("TracerPic.Image")));
+            this.TracerPic.Image = global::PrettyGoodPickOverwatch.Heroes.TracerMain;
             this.TracerPic.Location = new System.Drawing.Point(17, 626);
             this.TracerPic.Margin = new System.Windows.Forms.Padding(4);
             this.TracerPic.Name = "TracerPic";
@@ -253,7 +253,7 @@
             // 
             // MeiPic
             // 
-            this.MeiPic.Image = ((System.Drawing.Image)(resources.GetObject("MeiPic.Image")));
+            this.MeiPic.Image = global::PrettyGoodPickOverwatch.Heroes.MeiMain;
             this.MeiPic.Location = new System.Drawing.Point(247, 267);
             this.MeiPic.Margin = new System.Windows.Forms.Padding(4);
             this.MeiPic.Name = "MeiPic";
@@ -265,7 +265,7 @@
             // 
             // ReaperPic
             // 
-            this.ReaperPic.Image = ((System.Drawing.Image)(resources.GetObject("ReaperPic.Image")));
+            this.ReaperPic.Image = global::PrettyGoodPickOverwatch.Heroes.ReaperMain;
             this.ReaperPic.Location = new System.Drawing.Point(247, 87);
             this.ReaperPic.Margin = new System.Windows.Forms.Padding(4);
             this.ReaperPic.Name = "ReaperPic";
@@ -277,7 +277,7 @@
             // 
             // MccreePic
             // 
-            this.MccreePic.Image = ((System.Drawing.Image)(resources.GetObject("MccreePic.Image")));
+            this.MccreePic.Image = global::PrettyGoodPickOverwatch.Heroes.MccreeMain;
             this.MccreePic.Location = new System.Drawing.Point(132, 267);
             this.MccreePic.Margin = new System.Windows.Forms.Padding(4);
             this.MccreePic.Name = "MccreePic";
@@ -289,7 +289,7 @@
             // 
             // GenjiPic
             // 
-            this.GenjiPic.Image = ((System.Drawing.Image)(resources.GetObject("GenjiPic.Image")));
+            this.GenjiPic.Image = global::PrettyGoodPickOverwatch.Heroes.GenjiMain;
             this.GenjiPic.Location = new System.Drawing.Point(132, 87);
             this.GenjiPic.Margin = new System.Windows.Forms.Padding(4);
             this.GenjiPic.Name = "GenjiPic";
@@ -301,7 +301,7 @@
             // 
             // BastionPic
             // 
-            this.BastionPic.Image = ((System.Drawing.Image)(resources.GetObject("BastionPic.Image")));
+            this.BastionPic.Image = global::PrettyGoodPickOverwatch.Heroes.BastionMain;
             this.BastionPic.Location = new System.Drawing.Point(17, 87);
             this.BastionPic.Margin = new System.Windows.Forms.Padding(4);
             this.BastionPic.Name = "BastionPic";
@@ -313,7 +313,7 @@
             // 
             // TorbjornPic
             // 
-            this.TorbjornPic.Image = ((System.Drawing.Image)(resources.GetObject("TorbjornPic.Image")));
+            this.TorbjornPic.Image = global::PrettyGoodPickOverwatch.Heroes.TorbjornMain;
             this.TorbjornPic.Location = new System.Drawing.Point(361, 447);
             this.TorbjornPic.Margin = new System.Windows.Forms.Padding(4);
             this.TorbjornPic.Name = "TorbjornPic";
@@ -325,7 +325,7 @@
             // 
             // SombraPic
             // 
-            this.SombraPic.Image = ((System.Drawing.Image)(resources.GetObject("SombraPic.Image")));
+            this.SombraPic.Image = global::PrettyGoodPickOverwatch.Heroes.SombraMain;
             this.SombraPic.Location = new System.Drawing.Point(247, 447);
             this.SombraPic.Margin = new System.Windows.Forms.Padding(4);
             this.SombraPic.Name = "SombraPic";
@@ -337,7 +337,7 @@
             // 
             // JunkratPic
             // 
-            this.JunkratPic.Image = ((System.Drawing.Image)(resources.GetObject("JunkratPic.Image")));
+            this.JunkratPic.Image = global::PrettyGoodPickOverwatch.Heroes.JunkratMain;
             this.JunkratPic.Location = new System.Drawing.Point(361, 87);
             this.JunkratPic.Margin = new System.Windows.Forms.Padding(4);
             this.JunkratPic.Name = "JunkratPic";
@@ -349,7 +349,7 @@
             // 
             // SoldierPic
             // 
-            this.SoldierPic.Image = ((System.Drawing.Image)(resources.GetObject("SoldierPic.Image")));
+            this.SoldierPic.Image = global::PrettyGoodPickOverwatch.Heroes.SoldierMain;
             this.SoldierPic.Location = new System.Drawing.Point(132, 447);
             this.SoldierPic.Margin = new System.Windows.Forms.Padding(4);
             this.SoldierPic.Name = "SoldierPic";
@@ -361,7 +361,7 @@
             // 
             // SymmetraPic
             // 
-            this.SymmetraPic.Image = ((System.Drawing.Image)(resources.GetObject("SymmetraPic.Image")));
+            this.SymmetraPic.Image = global::PrettyGoodPickOverwatch.Heroes.SymmetraMain;
             this.SymmetraPic.Location = new System.Drawing.Point(17, 447);
             this.SymmetraPic.Margin = new System.Windows.Forms.Padding(4);
             this.SymmetraPic.Name = "SymmetraPic";
@@ -373,7 +373,7 @@
             // 
             // RoadhogPic
             // 
-            this.RoadhogPic.Image = ((System.Drawing.Image)(resources.GetObject("RoadhogPic.Image")));
+            this.RoadhogPic.Image = global::PrettyGoodPickOverwatch.Heroes.RoadhogMain;
             this.RoadhogPic.Location = new System.Drawing.Point(783, 626);
             this.RoadhogPic.Margin = new System.Windows.Forms.Padding(4);
             this.RoadhogPic.Name = "RoadhogPic";
@@ -385,7 +385,7 @@
             // 
             // WinstonPic
             // 
-            this.WinstonPic.Image = ((System.Drawing.Image)(resources.GetObject("WinstonPic.Image")));
+            this.WinstonPic.Image = global::PrettyGoodPickOverwatch.Heroes.WinstonMain;
             this.WinstonPic.Location = new System.Drawing.Point(897, 626);
             this.WinstonPic.Margin = new System.Windows.Forms.Padding(4);
             this.WinstonPic.Name = "WinstonPic";
@@ -397,7 +397,7 @@
             // 
             // ReinhardtPic
             // 
-            this.ReinhardtPic.Image = ((System.Drawing.Image)(resources.GetObject("ReinhardtPic.Image")));
+            this.ReinhardtPic.Image = global::PrettyGoodPickOverwatch.Heroes.ReinhardtMain;
             this.ReinhardtPic.Location = new System.Drawing.Point(899, 447);
             this.ReinhardtPic.Margin = new System.Windows.Forms.Padding(4);
             this.ReinhardtPic.Name = "ReinhardtPic";
@@ -409,7 +409,7 @@
             // 
             // OrisaPic
             // 
-            this.OrisaPic.Image = ((System.Drawing.Image)(resources.GetObject("OrisaPic.Image")));
+            this.OrisaPic.Image = global::PrettyGoodPickOverwatch.Heroes.OrisaMain;
             this.OrisaPic.Location = new System.Drawing.Point(784, 447);
             this.OrisaPic.Margin = new System.Windows.Forms.Padding(4);
             this.OrisaPic.Name = "OrisaPic";
@@ -421,7 +421,7 @@
             // 
             // TaranPic
             // 
-            this.TaranPic.Image = ((System.Drawing.Image)(resources.GetObject("TaranPic.Image")));
+            this.TaranPic.Image = global::PrettyGoodPickOverwatch.Heroes.TaranMain;
             this.TaranPic.Location = new System.Drawing.Point(668, 626);
             this.TaranPic.Margin = new System.Windows.Forms.Padding(4);
             this.TaranPic.Name = "TaranPic";
@@ -433,7 +433,7 @@
             // 
             // ZaryaPic
             // 
-            this.ZaryaPic.Image = ((System.Drawing.Image)(resources.GetObject("ZaryaPic.Image")));
+            this.ZaryaPic.Image = global::PrettyGoodPickOverwatch.Heroes.ZaryaMain;
             this.ZaryaPic.Location = new System.Drawing.Point(669, 447);
             this.ZaryaPic.Margin = new System.Windows.Forms.Padding(4);
             this.ZaryaPic.Name = "ZaryaPic";
@@ -445,7 +445,7 @@
             // 
             // DvaPic
             // 
-            this.DvaPic.Image = ((System.Drawing.Image)(resources.GetObject("DvaPic.Image")));
+            this.DvaPic.Image = global::PrettyGoodPickOverwatch.Heroes.DvaMain;
             this.DvaPic.Location = new System.Drawing.Point(555, 447);
             this.DvaPic.Margin = new System.Windows.Forms.Padding(4);
             this.DvaPic.Name = "DvaPic";
@@ -458,7 +458,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::PrettyGoodPickOverwatch.Heroes.reset1;
             this.pictureBox1.Location = new System.Drawing.Point(555, 328);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -482,7 +482,7 @@
             // 
             // AshPic
             // 
-            this.AshPic.Image = ((System.Drawing.Image)(resources.GetObject("AshPic.Image")));
+            this.AshPic.Image = global::PrettyGoodPickOverwatch.Heroes.AshMain;
             this.AshPic.Location = new System.Drawing.Point(362, 626);
             this.AshPic.Margin = new System.Windows.Forms.Padding(4);
             this.AshPic.Name = "AshPic";

@@ -54,10 +54,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Heroes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Heroes.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Heroes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Heroes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +92,372 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\images\Characters\Zenyatta\ZenyattaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\MainPicture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\reset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ana\AnaMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ana\AnaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ana\AnaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ana\AnaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ash\AshPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ash\AshGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ash\AshMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Ash\AshPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Baptist\BaptistPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Baptist\BaptistGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Baptist\BaptistMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Baptist\BaptistPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Bastion\BastionPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Bastion\BastionGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Bastion\BastionMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Bastion\BastionPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Brigitta\BrigittaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Brigitta\BrigittaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Brigitta\BrigittaMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Brigitta\BrigittaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\D.va\DvaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\D.va\DvaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\D.va\DvaMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\D.va\DvaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Doomfist\DoomfistPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Doomfist\DoomfistGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Doomfist\DoomfistMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Doomfist\DoomfistPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Genji\GenjiPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Genji\GenjiGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Genji\GenjiMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Genji\GenjiPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Hanzo\HanzoPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Hanzo\HanzoGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Hanzo\HanzoMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Hanzo\HanzoPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Junkrat\JunkratPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Junkrat\JunkratGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Junkrat\JunkratMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Junkrat\JunkratPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Lucio\LucioPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Lucio\LucioGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Lucio\LucioMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Lucio\LucioPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mccree\MccreePrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mccree\MccreeGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mccree\MccreeMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mccree\MccreePicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mei\MeiPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mei\MeiGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mei\MeiMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mei\MeiPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mercy\MercyPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mercy\MercyGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mercy\MercyMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Mercy\MercyPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Moira\MoiraPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Moira\MoiraPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Moira\MoiraGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Moira\MoiraMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Orisa\OrisaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Orisa\OrisaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Orisa\OrisaMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Orisa\OrisaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Pharra\PharraPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Pharra\PharraGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Pharra\PharraMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Pharra\PharraPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reaper\ReaperPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reaper\ReaperPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reaper\ReaperGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reaper\ReaperMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reinhardt\ReinhardtPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reinhardt\ReinhardtPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reinhardt\ReinhardtGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Reinhardt\ReinhardtMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Roadhog\RoadhogPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Roadhog\RoadhogPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Roadhog\RoadhogGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Roadhog\RoadhogMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Soldier\SoldierPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Soldier\SoldierPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Soldier\SoldierGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Soldier\SoldierMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Sombra\SombraPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Sombra\SombraPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Sombra\SombraGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Sombra\SombraMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Symmetra\SymmetraMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Symmetra\SymmetraPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Symmetra\SymmetraPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Symmetra\SymmetraGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Taran\TaranPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Taran\TaranPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Taran\TaranGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Taran\TaranMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Torbjorn\TorbjornPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Torbjorn\TorbjornPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Torbjorn\TorbjornGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Torbjorn\TorbjornMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Tracer\TracerPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Tracer\TracerPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Tracer\TracerGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Tracer\TracerMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Widow\WidowPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Widow\WidowPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Widow\WidowGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Widow\WidowMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Winston\WinstonPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Winston\WinstonPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Winston\WinstonGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Winston\WinstonMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zarya\ZaryaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zarya\ZaryaPrior.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zarya\ZaryaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zarya\ZaryaMain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zenyatta\ZenyattaPicked.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zenyatta\ZenyattaGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\Characters\Zenyatta\ZenyattaMain.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

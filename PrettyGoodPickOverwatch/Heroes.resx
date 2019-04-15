@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AnaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ana\AnaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ana\AnaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ana\AnaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AnaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ana\AnaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AshGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ash\AshGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AshMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ash\AshMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AshPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ash\AshPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AshPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Ash\AshPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaptistGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Baptist\BaptistGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaptistMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Baptist\BaptistMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaptistPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Baptist\BaptistPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BaptistPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Baptist\BaptistPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BastionGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Bastion\BastionGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BastionMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Bastion\BastionMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BastionPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Bastion\BastionPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BastionPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Bastion\BastionPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrigittaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Brigitta\BrigittaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrigittaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Brigitta\BrigittaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrigittaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Brigitta\BrigittaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BrigittaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Brigitta\BrigittaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoomfistGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Doomfist\DoomfistGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoomfistMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Doomfist\DoomfistMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoomfistPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Doomfist\DoomfistPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DoomfistPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Doomfist\DoomfistPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\D.va\DvaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\D.va\DvaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\D.va\DvaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DvaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\D.va\DvaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenjiGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Genji\GenjiGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenjiMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Genji\GenjiMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenjiPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Genji\GenjiPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenjiPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Genji\GenjiPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HanzoGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Hanzo\HanzoGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HanzoMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Hanzo\HanzoMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HanzoPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Hanzo\HanzoPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HanzoPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Hanzo\HanzoPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JunkratGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Junkrat\JunkratGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JunkratMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Junkrat\JunkratMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JunkratPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Junkrat\JunkratPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JunkratPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Junkrat\JunkratPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LucioGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Lucio\LucioGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LucioMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Lucio\LucioMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LucioPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Lucio\LucioPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LucioPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Lucio\LucioPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainPicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\MainPicture.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MccreeGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mccree\MccreeGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MccreeMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mccree\MccreeMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MccreePicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mccree\MccreePicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MccreePrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mccree\MccreePrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeiGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mei\MeiGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeiMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mei\MeiMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeiPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mei\MeiPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MeiPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mei\MeiPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MercyGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mercy\MercyGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MercyMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mercy\MercyMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MercyPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mercy\MercyPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MercyPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Mercy\MercyPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoiraGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Moira\MoiraGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoiraMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Moira\MoiraMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoiraPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Moira\MoiraPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoiraPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Moira\MoiraPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrisaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Orisa\OrisaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrisaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Orisa\OrisaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrisaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Orisa\OrisaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrisaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Orisa\OrisaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PharraGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Pharra\PharraGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PharraMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Pharra\PharraMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PharraPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Pharra\PharraPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PharraPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Pharra\PharraPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReaperGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reaper\ReaperGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReaperMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reaper\ReaperMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReaperPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reaper\ReaperPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReaperPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reaper\ReaperPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReinhardtGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reinhardt\ReinhardtGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReinhardtMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reinhardt\ReinhardtMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReinhardtPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reinhardt\ReinhardtPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReinhardtPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Reinhardt\ReinhardtPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reset1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\reset.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoadhogGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Roadhog\RoadhogGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoadhogMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Roadhog\RoadhogMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoadhogPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Roadhog\RoadhogPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RoadhogPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Roadhog\RoadhogPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldierGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Soldier\SoldierGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldierMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Soldier\SoldierMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldierPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Soldier\SoldierPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SoldierPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Soldier\SoldierPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SombraGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Sombra\SombraGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SombraMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Sombra\SombraMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SombraPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Sombra\SombraPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SombraPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Sombra\SombraPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymmetraGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Symmetra\SymmetraGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymmetraMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Symmetra\SymmetraMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymmetraPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Symmetra\SymmetraPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SymmetraPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Symmetra\SymmetraPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaranGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Taran\TaranGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaranMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Taran\TaranMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaranPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Taran\TaranPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaranPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Taran\TaranPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TorbjornGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Torbjorn\TorbjornGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TorbjornMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Torbjorn\TorbjornMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TorbjornPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Torbjorn\TorbjornPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TorbjornPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Torbjorn\TorbjornPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TracerGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Tracer\TracerGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TracerMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Tracer\TracerMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TracerPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Tracer\TracerPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TracerPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Tracer\TracerPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WidowGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Widow\WidowGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WidowMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Widow\WidowMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WidowPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Widow\WidowPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WidowPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Widow\WidowPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinstonGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Winston\WinstonGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinstonMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Winston\WinstonMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinstonPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Winston\WinstonPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WinstonPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Winston\WinstonPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZaryaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zarya\ZaryaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZaryaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zarya\ZaryaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZaryaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zarya\ZaryaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZaryaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zarya\ZaryaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZenyattaGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zenyatta\ZenyattaGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZenyattaMain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zenyatta\ZenyattaMain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZenyattaPicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zenyatta\ZenyattaPicked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZenyattaPrior" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>bin\Debug\images\Characters\Zenyatta\ZenyattaPrior.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
